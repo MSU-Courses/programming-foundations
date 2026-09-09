@@ -185,7 +185,7 @@ _An algorithm and a program are different things_, and they should not be confus
 
 Almost every problem we will solve fits the same general pattern: a program receives data, does something with it, and produces a result:
 
-![Figure 1.1. General program workflow](../_images/01/algo.png)
+![Figure 1.1. General program workflow](../_images/01/algo_en.png)
 
 _Figure 1.1. General program workflow._
 
