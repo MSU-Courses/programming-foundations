@@ -2,48 +2,83 @@
 
 ## Objective
 
-Learn to turn a description of a game mechanic or a game calculation into an algorithm, write that algorithm as pseudocode and a flowchart, and check that it is correct by executing it by hand with a trace table.
+Learn to turn a description of a game situation into an algorithm, write the algorithm as pseudocode and a flowchart, and check that it is correct by executing it by hand with a trace table.
 
 ## Note
 
 Tasks marked `[extra]` are optional and count toward a higher grade.
 
-## Task
+## What to submit
 
-Each student writes two algorithms:
+A Word report (`.docx`) that solves two tasks: one from Part A and one from Part B. Use the template [`report-template-en.docx`](./report-template-en.docx).
 
-- one for a game mechanic from _Part A_ and
-- one for a game calculation from _Part B_.
+## Choosing your tasks
 
-Your task numbers depend on the last digit of your number in the group list. If the last digit is `d`, you do tasks `d` and `10 + d`. For example, a student with number 7 or 17 does tasks 7 and 17. The digit `0` means tasks 10 and 20.
+Your task numbers depend on the last digit of your number in the group list.
 
-The task descriptions do not list the inputs. Finding them in the text is part of the task. Use this rule:
+| Last digit of your number | Part A | Part B |
+| :-----------------------: | :----: | :----: |
+|             1             |   1    |   11   |
+|             2             |   2    |   12   |
+|             3             |   3    |   13   |
+|             4             |   4    |   14   |
+|             5             |   5    |   15   |
+|             6             |   6    |   16   |
+|             7             |   7    |   17   |
+|             8             |   8    |   18   |
+|             9             |   9    |   19   |
+|             0             |   10   |   20   |
 
-- If a value is given as a number in the text, such as "the potion restores 20 health", it is a fixed game rule and is not an input.
-- If a value is not given as a number, such as "the character's health", it is an input.
+## How to read a task
 
-All input values are non-negative whole numbers. A yes-or-no answer is entered as a number: `1` means "yes" and `0` means "no". You do not need to handle invalid input.
+Every task has the same layout:
+
+- **Situation** describes what happens in the game.
+- **Formula** appears only in Part B. It is a ready-made calculation, and you do not need to derive it.
+- **Rules** list everything the algorithm must take into account.
+- **Output** says which values the algorithm prints at the end.
+- **Example** shows the correct result for one set of data. Use it to check that you understood the task.
+- **Think about it** contains two questions. Your answers go into the report.
+
+These general rules apply to all tasks:
+
+1. The inputs are not listed in the tasks, so you need to find them yourself. If a value is given in the text as a number, such as "the trap deals 40 damage", it is a game rule and is not an input. If a value is not given as a number, such as "the character's health", it is an input.
+2. All input values are non-negative whole numbers. You do not need to handle invalid input.
+3. A yes-or-no answer is entered as a number: `1` means "yes" and `0` means "no".
+4. Messages are printed in the order in which they appear in the rules. The values listed under "Output" are printed at the very end.
+
+## Procedure
 
 Do Steps 1-4 for each of your two tasks.
 
 ### Step 1. Analyze the problem
 
-Before writing any steps, work out what you are given and what you need to produce.
+1. Find the inputs. Give each value a variable name and explain in one phrase what it means.
+2. List what the algorithm prints.
+3. Answer the questions under "Think about it". One or two sentences per question are enough.
 
-1. Find the inputs in the description. Give each value a variable name and explain in one phrase what it means.
-2. List what the algorithm must output.
+Use these variable names in all the steps that follow.
 
-Use the same names in all the steps that follow.
+### Step 2. Pseudocode
 
-### Step 2. The algorithm in pseudocode
+Write the algorithm in pseudocode. Each line should describe one action, and the executor must not have to guess anything.
 
-Write the algorithm in pseudocode. Each line should describe one action, and the executor must not have to guess anything. Use the commands from Lecture 2 or you can use your own consistent notation.
+Use the commands from Lecture 2 or you can create your own as long as they are clear and unambiguous.
 
-You can place one condition inside another. If the description says that two conditions must both be true, write one `IF` inside the other.
+- `INPUT` to read a value.
+- `OUTPUT` to print a value or a message.
+- `SET` for assignment.
+- `+`, `-`, `*` for arithmetic, and parentheses for the order of operations.
+- `IF ... ELSE ... END IF` for branching. You can leave out `ELSE` when you do not need it.
+
+You can place one condition inside another. If two conditions must both be true, write one `IF` inside the other.
 
 This lab does not require loops.
 
-### Step 3. The flowchart
+> [!TIP]
+> The rules in a task are listed so that they are easy to read. This is not necessarily the order in which they must be carried out. You decide the order of the steps.
+
+### Step 3. Flowchart
 
 Draw a flowchart of the same algorithm. Use the four blocks from Lecture 2:
 
@@ -52,39 +87,66 @@ Draw a flowchart of the same algorithm. Use the four blocks from Lecture 2:
 - A parallelogram for input and output.
 - A diamond for a condition. A diamond has exactly two exits: "Yes" and "No".
 
-Every path through the flowchart must reach the "End" block.
+Every path through the flowchart must reach the "End" block. The variable names and the order of actions must match the pseudocode.
 
-You can draw the flowchart in [draw.io](https://app.diagrams.net) or by hand on paper. Export a draw.io flowchart as PNG, or take a photo of a paper drawing. The photo must be sharp, with every label readable. Insert the image into the report.
+You can draw the flowchart in [draw.io](https://app.diagrams.net) and export it as PNG, or draw it by hand on paper and take a photo. The photo must be sharp, with every label readable.
 
 ### Step 4. Check the algorithm
 
 1. Prepare at least three sets of input data:
    - a _normal case_ with typical values;
-   - a _boundary case_, where a value sits exactly on the edge of a condition;
+   - a _boundary case_, where a value sits exactly on the edge of a condition, for example exactly 25 for the rule "25 or more";
    - a _special case_, for example with a zero value.
 
-   Together, the data sets must go through every branch of the algorithm at least once. Tasks with several conditions usually need more than three sets.
+   Together, the data sets must go through every branch of the algorithm at least once. If there are many branches, three sets will not be enough.
 
-2. For each data set, work out the expected result before tracing, using only the task description.
+2. For each data set, work out the expected result before tracing, using only the text of the task.
 3. Execute the pseudocode by hand and fill in a trace table.
 4. Compare the traced result with the expected one.
 
-If the results differ, find the step where they started to differ, fix both the pseudocode and the flowchart, and check it again. In the report, briefly describe the mistake you found and how you fixed it. A mistake that you found and fixed does not lower your grade.
+You can use the example from the task as the normal case, but make up the other data sets yourself.
+
+If the results differ, find the step where they started to differ, fix the pseudocode and the flowchart, and check again. Briefly describe the mistake in the report. A mistake that you found and fixed does not lower your grade.
 
 ### Step 5. Change the rules `[extra]`
 
 Do this for one of your two tasks.
 
 1. Swap two steps of the algorithm so that the result changes. Use a trace table to show which input data now give a wrong result.
-2. Invent one new rule for the task, for example "on Mondays the merchant gives a 5-coin discount". Describe the rule in one sentence and update the pseudocode and the flowchart.
+2. Invent one new rule for the task, for example "on Mondays the merchant gives a 5-coin discount". Describe it in one sentence and update the pseudocode and the flowchart.
 
-## Example
+## Worked example
 
-This example uses a mechanic that is not in the list. It is simpler than the listed tasks and only shows how to lay out the work.
+This example uses a task that is not in the list. It is simpler than the listed tasks and only shows how to lay out the work.
 
-> _Coin purse._ The character finds coins and puts them in a purse. The purse holds at most 999 coins. If there would be more, the extra coins are lost and the game prints "Purse is full". At the end, the game prints the number of coins in the purse.
+> **Coin purse**
+>
+> **Situation.** The character finds coins and puts them in a purse.
+>
+> **Rules.**
+>
+> - The purse holds at most 999 coins.
+> - If there would be more, the extra coins are lost and the game prints "Purse is full".
+>
+> **Output.** The number of coins in the purse.
+>
+> **Example.** The purse holds 990 coins, and 20 coins are found. Output: "Purse is full", 999.
+>
+> **Think about it.**
+>
+> 1. Is there a message if the purse ends up with exactly 999 coins?
+> 2. What comes first: adding the coins or checking the limit?
 
-**Problem analysis.** Inputs: `coins` - how many coins were in the purse, `found` - how many coins were found. The number 999 is given in the description, so it is a game rule, not an input. Output: the message "Purse is full" if the purse overflowed, and the final value of `coins`.
+**Problem analysis.**
+
+Inputs: `coins` - how many coins were in the purse, `found` - how many coins were found. The number 999 is given in the text, so it is a game rule, not an input.
+
+Output: the message "Purse is full" if the purse overflowed, and the final value of `coins`.
+
+Answers to the questions:
+
+1. No. The message is printed only if there are more than 999 coins, and 999 is not more than 999.
+2. Adding comes first. Until the coins are added, we do not know whether the purse overflowed.
 
 **Pseudocode.**
 
@@ -104,17 +166,7 @@ OUTPUT coins
 
 **Flowchart.**
 
-```mermaid
-flowchart TD
-    A([Start]) --> B[/Input coins, found/]
-    B --> C["coins = coins + found"]
-    C --> D{"coins > 999?"}
-    D -- Yes --> E["coins = 999"]
-    E --> F[/Output: Purse is full/]
-    F --> G[/Output coins/]
-    D -- No --> G
-    G --> H([End])
-```
+<img src="https://imgur.com/mLCTH5p.png" alt="Flowchart for coin purse example" />
 
 **Data sets.**
 
@@ -125,7 +177,7 @@ flowchart TD
 | Overflow |     990 |      20 | "Purse is full", `999` |
 | Special  |       0 |       0 | `0`                    |
 
-**Trace for `coins = 990`, `found = 20`.** A dash means nothing has been stored in that cell yet.
+**Trace for `coins = 990`, `found = 20`.** A dash means nothing has been stored in the variable yet.
 
 | Step | Instruction                 | `coins` | `found` | Output        |
 | ---: | --------------------------- | ------: | ------: | ------------- |
@@ -139,211 +191,466 @@ flowchart TD
 
 The result matches the expected one. Your report needs a table like this for every data set.
 
-## Tasks
+## Part A. Game mechanics
 
-### Part A. Game mechanics
+### Task 1. Healing potion
 
-#### Task 1. Healing potion
+**Situation.** The character drinks a healing potion. An enemy may have poisoned the character earlier in the fight, so the character has a poison level.
 
-The character drinks a potion. A small potion restores 20 health and a large one restores 50. The player chooses the potion with a number: `1` for small, `2` for large. The character may have been poisoned earlier, for example by a venomous enemy. The poison level is known before the character drinks the potion, and if it is greater than 0, the potion first cures the poison: the poison level becomes 0 and the amount of health restored is reduced by 10. Health cannot go above the maximum. If the character's health is 0, the potion has no effect: the game prints "The potion has no effect", and neither health nor poison changes. At the end, the game prints health and the poison level.
+**Rules.**
 
-#### Task 2. Merchant
+- A small potion restores 20 health and a large one restores 50. The player chooses the potion: `1` for small, `2` for large.
+- If the poison level is greater than 0, the potion cures the poison: the poison level becomes 0, but the potion restores 10 less health.
+- Health cannot go above the maximum.
+- If the character's health is 0, the potion has no effect: the game prints "The potion has no effect", and health and poison do not change.
 
-An item costs some number of coins. A customer who has made 5 or more purchases from this merchant gets a 10-coin discount, and a customer with 10 or more purchases gets a 25-coin discount instead. The discounted price cannot drop below 1 coin. If the character has enough coins, the price is paid and the game prints "Purchase complete". If the character does not have enough coins, but has at least 1 coin and is short by 5 coins or less, the merchant gives in: the character hands over all their coins and the game prints "The merchant agreed". In every other case the game prints "Not enough coins". At the end, the game prints the character's coins.
+**Output.** Health and the poison level.
 
-#### Task 3. Hitting an enemy
+**Example.** Health 40, maximum health 100, poison level 3, large potion. Output: 80, 0.
 
-When the hit starts, the enemy's health is greater than 0. The character rolls a twenty-sided die, and the player enters the result, a number from 1 to 20. If the roll is 1, the hit misses: damage is 0 and the game prints "Miss". Otherwise damage equals the character's attack minus the enemy's defense, but is at least 1. If the roll is 20, this damage is doubled and the game prints "Critical hit". Damage is subtracted from the enemy's health. If the enemy's health becomes 0 or less, it is set to 0 and the game prints "Enemy defeated". At the end, the game prints the enemy's health.
+**Think about it.**
 
-#### Task 4. Experience and level
+1. Which rule has to be checked before all the others, and why?
+2. Health is 95 out of 100, no poison, small potion. How much health will the character have?
 
-The maximum level is 10. If the character is already at level 10, no experience is added and the game prints "Maximum level". Otherwise the reward is added to experience. To reach the next level, the character needs experience of at least the current level multiplied by 100. If there is enough experience, the level goes up by 1, this threshold is subtracted from experience, and the game prints "Level up". If the character has now reached level 10, experience is set to 0. One reward can give at most one level. At the end, the game prints the level and the experience.
+### Task 2. Merchant
 
-#### Task 5. Spike trap
+**Situation.** The character buys an item from a merchant.
 
-The trap deals 40 damage. If the character's armor is 25 or more, the damage is reduced to 20. If the character has a shield, meaning shield durability is greater than 0, the shield takes the hit: damage is subtracted from shield durability. If shield durability is less than the damage, durability is set to 0, the remaining damage is subtracted from health, and the game prints "Shield broken". If there is no shield, all the damage is subtracted from health. If health becomes 0 or less, it is set to 0 and the game prints "Character died". At the end, the game prints health and shield durability.
+**Rules.**
 
-#### Task 6. Locked door
+- A regular customer who has made 5 or more purchases from this merchant gets a 10-coin discount.
+- The discounted price cannot drop below 1 coin.
+- If the character has enough coins, the price is paid and the game prints "Purchase complete". If no coins are left after the purchase, the game prints "Purse is empty".
+- If the character does not have enough coins, the game prints "Not enough coins", and the coins do not change.
 
-The door can be opened with a key, with a lockpick, or by paying the guard 50 coins. The character tries these options in exactly this order and uses the first one available. If the character has a key, one key is used and the game prints "Door opened with a key". If there are no keys but there is a lockpick, the character tries to pick the lock. With agility of 15 or more, the door opens, the lockpick is not used up, and the game prints "Door opened with a lockpick". With lower agility, the lockpick breaks, the number of lockpicks goes down by 1, and the game prints "Lockpick broke". No coins are spent in this case. If there are no keys and no lockpicks but there are 50 coins or more, 50 coins are spent and the game prints "Door opened for coins". Otherwise the game prints "Door is locked". At the end, the game prints the number of keys, lockpicks, and coins.
+**Output.** The number of coins.
 
-#### Task 7. Fireball
+**Example.** 50 coins, item price 45, 7 past purchases. Output: "Purchase complete", 15.
 
-The Fireball spell costs 30 mana and deals 45 damage to the enemy. If the enemy resists fire, the damage is reduced to 15. If there is enough mana, the mana is spent and the damage is subtracted from the enemy's health. If the enemy's health becomes 0 or less, it is set to 0 and the game prints "Enemy defeated". If there is not enough mana, the spell fails: the game prints "Not enough mana" and the character regains 10 mana. Mana cannot go above 100. At the end, the game prints the character's mana and the enemy's health.
+**Think about it.**
 
-#### Task 8. Round timer
+1. The item costs 8, and the character has made 5 purchases. How many coins will the character pay?
+2. The character has exactly as many coins as the item costs. Which messages will the game print?
 
-A round lasts at most 120 seconds. If the character picked up an hourglass, 15 seconds are added to the remaining time, but the time cannot go above 120. Then the time spent on an action is subtracted from the remaining time. If the character's health is below 30, the character is wounded and acts more slowly, so twice the action time is subtracted. If the remaining time becomes 0 or less, it is set to 0 and the game prints "Time is up". Otherwise, if 10 seconds or less remain, the game prints "Hurry up". At the end, the game prints the remaining time.
+### Task 3. Hitting an enemy
 
-#### Task 9. Level reward
+**Situation.** The character hits an enemy and rolls a twenty-sided die. The player enters the result, a number from 1 to 20. When the hit starts, the enemy's health is greater than 0.
 
-If the player finished the level without taking any damage, a 200-point bonus is added to the score. The final score then decides the chest: 1000 points or more gives a gold chest, 500 points or more gives a silver chest, and anything else gives a wooden chest. The game prints the chest type. If the final score is higher than the high score, the high score is replaced with the final score and the game prints "New high score". At the end, the game prints the final score and the high score.
+**Rules.**
 
-#### Task 10. Falling
+- Damage equals the character's attack minus the enemy's defense, but is at least 1.
+- If the die shows 20, damage is doubled and the game prints "Critical hit".
+- If the die shows 1, the hit misses: damage is 0 and the game prints "Miss".
+- Damage is subtracted from the enemy's health. The enemy's health cannot drop below 0. If it becomes 0, the game prints "Enemy defeated".
 
-A fall from a height of up to and including 3 meters deals no damage. From a greater height, damage equals the difference between the height and 3 meters, multiplied by 10. If the character lands in water, this difference is multiplied by 2 instead of 10. Damage is subtracted from health. If health becomes 0 or less, it is set to 0 and the game prints "Character died". Otherwise, if the damage was greater than 50, the game prints "Character stunned". At the end, the game prints health.
+**Output.** The enemy's health.
 
-### Part B. Game calculations
+**Example.** Attack 12, defense 5, enemy health 30, die shows 20. Output: "Critical hit", 16.
 
-In these tasks the game computes something with a formula: movement, damage, fuel use. The formula is always given, and you do not need to understand why it looks the way it does. Your job is to turn it into exact steps and handle the special cases from the description. The computer does not know physics either: it just carries out the calculations step by step.
+**Think about it.**
 
-Letters in the formulas are only there to keep them short. In your algorithm you can give the variables clearer names.
+1. Attack 3, defense 8, die shows 20. How much damage will the enemy take?
+2. On a miss, do you need to calculate damage as "attack minus defense"?
 
-Each task includes a worked example with concrete numbers. It shows the order of the calculations. Use it to check your own work.
+### Task 4. Experience and level
 
-Division can give a fractional result. In your trace tables, write such values to two decimal places.
+**Situation.** The character receives an experience reward.
 
-#### Task 11. Falling object
+**Rules.**
 
-A game recalculates the position of objects many times per second. One such update is called a _frame_. In this task you describe one frame of an object falling.
+- The maximum level is 10. If the character is already at level 10, the reward is not added and the game prints "Maximum level".
+- In all other cases, the reward is added to experience.
+- To reach a new level, experience must be at least the current level multiplied by 100.
+- If there is enough experience, the level goes up by 1, this threshold is subtracted from experience, and the game prints "Level up". One reward can give only one level.
 
-Height `h` shows how high the object is above the ground. Speed `v` shows how many units the object drops per frame. First, gravity speeds the object up, and speed increases by 10: `v = v + 10`. Then the object drops by the new speed: `h = h - v`. If height becomes 0 or less, the object is on the ground: height and speed are both set to 0 and the game prints "Object landed". At the end, the game prints height and speed.
+**Output.** Level and experience.
 
-_Worked example_ for `h = 100`, `v = 20`:
+**Example.** Level 3, experience 250, reward 80. Output: "Level up", 4, 30.
 
-1. `v = 20 + 10 = 30`.
-2. `h = 100 - 30 = 70`.
-3. Height `70` is greater than 0, so the object is still in the air.
-4. Output: height `70`, speed `30`.
+**Think about it.**
 
-#### Task 12. Car braking
+1. Should the threshold be calculated from the level before or after the level-up? Show with an example what would change.
+2. Level 2, experience 150, reward 50. Will the character reach a new level?
 
-A car is driving in a straight line and the player has released the gas. Speed `v` shows how many meters the car travels per frame. Distance `s` shows how many meters the car has already traveled. Friction `f` slows the car down every frame.
+### Task 5. Spike trap
 
-In one frame, speed decreases by friction: `v = v - f`. Speed cannot drop below 0: if it is negative after the subtraction, it is set to 0. Then the distance increases by the new speed: `s = s + v`. If speed is 0, the game prints "The car stopped". At the end, the game prints speed and distance.
+**Situation.** The character steps on a spike trap.
 
-_Worked example_ for `v = 25`, `f = 4`, `s = 100`:
+**Rules.**
 
-1. `v = 25 - 4 = 21`.
-2. Speed `21` is not below 0, so it stays.
-3. `s = 100 + 21 = 121`.
-4. Speed is not 0, so there is no message.
-5. Output: speed `21`, distance `121`.
+- The trap deals 40 damage.
+- If the character's armor is 25 or more, the damage is reduced to 20.
+- If the character drank a protection potion, the damage is reduced by another 10.
+- Damage is subtracted from health. Health cannot drop below 0. If it becomes 0, the game prints "Character died".
 
-#### Task 13. Time to target
+**Output.** Health.
 
-A character is running to a meeting point, and the game shows how many seconds of running are left. Distance to the point `d` is in meters, speed `v` is in meters per second. Travel time equals distance divided by speed: `t = d / v`.
+**Example.** Health 50, armor 30, protection potion taken. Output: 40.
 
-You cannot divide by zero. If speed is 0, the character is standing still: time is not calculated, the game prints "The character will not get there", and nothing else happens. Otherwise, time is calculated and printed. It is then compared with the time left in the round `r`: if travel time is not greater than `r`, the game prints "Will make it", otherwise "Will not make it".
+**Think about it.**
 
-_Worked example_ for `d = 150`, `v = 20`, `r = 10`:
+1. Which damage values are possible for this trap? List all of them.
+2. Armor is exactly 25 and there is no potion. How much damage will the character take?
 
-1. Speed `20` is not 0, so division is allowed.
-2. `t = 150 / 20 = 7.5`.
-3. Output: `7.5`.
-4. `7.5` is not greater than `10`, output: "Will make it".
+### Task 6. Locked door
 
-#### Task 14. Bouncing ball
+**Situation.** The character wants to go through a locked door.
 
-A ball hits the floor at speed `v` and loses part of its speed. Bounciness `e` is a percentage that shows how much speed is kept: at 100 the ball bounces back at the same speed, at 0 it does not bounce at all. Speed after the hit: `v = v * e / 100`.
+**Rules.**
 
-If the new speed is below 5, the ball stops bouncing: speed is set to 0 and the game prints "The ball stopped". Otherwise the bounce counter `n` goes up by 1 and the game prints "Bounce". At the end, the game prints speed and the number of bounces.
+- The character tries the options strictly in order: first a key, then coins.
+- If the character has at least one key, one key is used and the game prints "Door opened with a key".
+- If there is no key, a guard opens the door for 50 coins. If the character has enough coins, 50 coins are spent and the game prints "Door opened for coins".
+- If neither option works, the game prints "Door is locked".
 
-_Worked example_ for `v = 40`, `e = 60`, `n = 3`:
+**Output.** The number of keys and the number of coins.
 
-1. `40 * 60 = 2400`.
-2. `v = 2400 / 100 = 24`.
-3. Speed `24` is not below 5, so the ball bounces.
-4. `n = 3 + 1 = 4`, output: "Bounce".
-5. Output: speed `24`, bounces `4`.
+**Example.** 0 keys, 70 coins. Output: "Door opened for coins", 0, 20.
 
-#### Task 15. Experience bar
+**Think about it.**
 
-An experience bar 200 pixels wide is drawn above the character. The character has `x` experience and needs `m` experience for the next level. The value `m` is always greater than 0.
+1. The character has 2 keys and 100 coins. What will the character spend?
+2. Why can't the coin check come before the key check in the algorithm?
 
-First, the game calculates what percentage of the bar is filled: `p = x * 100 / m`. The bar cannot be more than 100 percent full: if `p` is greater than 100, it is set to 100. Then the game calculates the width of the filled part in pixels: `w = p * 200 / 100`. If the bar is 90 percent full or more, the game prints "Almost a new level". At the end, the game prints the percentage and the filled width.
+### Task 7. Fireball
 
-_Worked example_ for `x = 150`, `m = 400`:
+**Situation.** The character tries to cast the Fireball spell.
 
-1. `150 * 100 = 15000`.
-2. `p = 15000 / 400 = 37.5`.
-3. `37.5` is not greater than 100, so it stays.
-4. `37.5 * 200 = 7500`.
-5. `w = 7500 / 100 = 75`.
-6. `37.5` is below 90, so there is no message.
-7. Output: percentage `37.5`, width `75`.
+**Rules.**
 
-#### Task 16. Explosion damage
+- The spell costs 30 mana and deals 45 damage to the enemy.
+- If the enemy resists fire, the damage is reduced to 15.
+- If there is enough mana, the mana is spent and the damage is subtracted from the enemy's health. The enemy's health cannot drop below 0. If it becomes 0, the game prints "Enemy defeated".
+- If there is not enough mana, the spell fails: the game prints "Not enough mana" and the character regains 10 mana. Mana cannot go above 100.
 
-A bomb explodes near the character. The closer the character is to the center of the explosion, the more damage they take. Maximum damage at the center is `D`, the blast radius is `R` meters, and the distance from the character to the center is `d` meters. The radius is always greater than 0.
+**Output.** The character's mana and the enemy's health.
 
-If the distance is not less than the radius, the blast does not reach the character: damage is 0 and the game prints "Character is outside the blast". Otherwise damage is calculated as `u = D * (R - d) / R`. The part in parentheses is calculated first. Damage is subtracted from health. If health becomes 0 or less, it is set to 0 and the game prints "Character died". At the end, the game prints damage and health.
+**Example.** Mana 40, enemy health 60, no fire resistance. Output: 10, 15.
 
-_Worked example_ for `D = 80`, `R = 10`, `d = 4` and health `100`:
+**Think about it.**
 
-1. Distance `4` is less than radius `10`, so the character is hit.
-2. `10 - 4 = 6`.
-3. `80 * 6 = 480`.
-4. `u = 480 / 10 = 48`.
-5. Health: `100 - 48 = 52`, greater than 0.
-6. Output: damage `48`, health `52`.
+1. Can mana go above 100 when the spell works? Why?
+2. Mana is exactly 30. Will the spell work?
 
-#### Task 17. Enough fuel
+### Task 8. Round timer
 
-The player sends a truck to a nearby town. The town is `d` kilometers away and the tank holds `b` liters of fuel. Consumption `c` shows how many liters the truck uses per 100 kilometers. Consumption is always greater than 0.
+**Situation.** A round counts down time. The character may pick up an hourglass and then performs an action that takes time.
 
-First, the game calculates how much fuel the trip needs: `n = d * c / 100`. If the tank holds at least that much fuel, it is used: `b = b - n`, and the game prints "The truck arrived". Otherwise the truck drives until the fuel runs out. The distance it covers is `k = b * 100 / c`. The game prints "Out of fuel" and the distance `k`, and then the fuel in the tank is set to 0. At the end, the game prints the amount of fuel in the tank.
+**Rules.**
 
-_Worked example_ for `d = 250`, `c = 8`, `b = 30`:
+- If the character picked up an hourglass, 15 seconds are added to the remaining time. The time cannot go above 120 seconds.
+- The action happens after the hourglass is picked up and takes the given number of seconds.
+- If the character's health is below 30, the character is wounded and the action takes twice as long.
+- The time cannot drop below 0. If it becomes 0, the game prints "Time is up". If 1 to 10 seconds remain, the game prints "Hurry up".
 
-1. `250 * 8 = 2000`.
-2. `n = 2000 / 100 = 20`.
-3. `30` is not less than `20`, so there is enough fuel.
-4. `b = 30 - 20 = 10`, output: "The truck arrived".
-5. Output: fuel `10`.
+**Output.** The remaining time.
 
-#### Task 18. Player rank
+**Example.** 110 seconds left, hourglass picked up, the action takes 20 seconds, health 25. Output: 80.
 
-After a three-round tournament, the player gets a rank. Call the scores for the first, second, and third rounds `a`, `b`, and `c`. The rank depends on the average score: `s = (a + b + c) / 3`. The scores are added first, and then the sum is divided by 3.
+**Think about it.**
 
-If the average is 80 or more, the game prints "Master". If the average is 50 or more, the game prints "Player". Otherwise the game prints "Beginner". Also, if the third-round score is higher than the first-round score, the game prints "Improving". At the end, the game prints the average.
+1. Calculate the example again, but check the "at most 120" limit after the action. Is the result the same as the correct one?
+2. Can the game print both "Time is up" and "Hurry up" at once? Why?
 
-_Worked example_ for `a = 70`, `b = 85`, `c = 90`:
+### Task 9. Level reward
 
-1. `70 + 85 = 155`.
-2. `155 + 90 = 245`.
-3. `s = 245 / 3 = 81.67`.
-4. `81.67` is not less than 80, output: "Master".
-5. `90` is greater than `70`, output: "Improving".
-6. Output: average `81.67`.
+**Situation.** The player finished a level and gets a chest.
 
-#### Task 19. Button click
+**Rules.**
 
-The game menu has a rectangular button. A position on the screen is given in pixels by two numbers: `x` is counted from the left edge of the screen to the right, and `y` from the top edge down.
+- If the player finished the level without taking damage, a 200-point bonus is added to the score.
+- The chest depends on the final score: 1000 or more gives a gold chest, 500 or more gives a silver chest, and anything else gives a wooden chest. The game prints "Gold chest", "Silver chest", or "Wooden chest".
+- If the final score is higher than the high score, the high score becomes the final score and the game prints "New high score".
 
-The top-left corner of the button is at `bx`, `by`. The button's width is `w` and its height is `h`. So the right edge of the button is at `bx + w` and the bottom edge is at `by + h`. The cursor at `x`, `y` is on the button if `x` is not less than the left edge and not greater than the right edge, and `y` is not less than the top edge and not greater than the bottom edge.
+**Output.** The high score.
 
-A button can be disabled. If the player clicks outside the button, the game prints "Missed". If the player clicks a disabled button, the game prints "Button is disabled". If the player clicks an enabled button, the game prints "Button pressed".
+**Example.** Score 850, level finished without damage, high score 900. Output: "Gold chest", "New high score", 1050.
 
-_Worked example_ for `bx = 100`, `by = 50`, `w = 120`, `h = 40`, a cursor at `x = 150`, `y = 70`, and an enabled button:
+**Think about it.**
 
-1. Right edge: `100 + 120 = 220`.
-2. Bottom edge: `50 + 40 = 90`.
-3. `150` is not less than `100` and not greater than `220`, so the click is inside horizontally.
-4. `70` is not less than `50` and not greater than `90`, so the click is inside vertically.
-5. The button is enabled, output: "Button pressed".
+1. Score 1000, high score 1000. Is there a new high score?
+2. Why must the "1000 or more" check come before the "500 or more" check?
 
-#### Task 20. Enemy spots the player
+### Task 10. Falling
 
-In a side-view game, characters move left and right. A character's position is its distance in meters from the left edge of the level. The enemy stands at `e`, the player at `p`, and the enemy can see `r` meters around itself.
+**Situation.** The character falls from a height given in meters.
 
-The distance between the enemy and the player is the larger position minus the smaller one. If `p` is not less than `e`, then `d = p - e`, otherwise `d = e - p`. If the distance is 2 or less, the game prints "Enemy attacks". Otherwise, if the distance is not greater than the sight range, the game prints "Player spotted". Otherwise the game prints "All quiet". At the end, the game prints the distance.
+**Rules.**
 
-_Worked example_ for `e = 40`, `p = 25`, `r = 20`:
+- A fall from 3 meters or less deals no damage.
+- From a greater height, damage equals the difference between the height and 3 meters, multiplied by 10.
+- If the character lands in water, this difference is multiplied by 2 instead of 10.
+- Damage is subtracted from health. Health cannot drop below 0. If it becomes 0, the game prints "Character died".
+- If the character is alive and the damage is greater than 50, the game prints "Character stunned".
 
-1. `25` is less than `40`, so `d = 40 - 25 = 15`.
-2. `15` is greater than 2, so the enemy does not attack.
-3. `15` is not greater than `20`, output: "Player spotted".
-4. Output: distance `15`.
+**Output.** Health.
+
+**Example.** Height 10, not into water, health 100. Output: "Character stunned", 30.
+
+**Think about it.**
+
+1. Height 3 meters, into water. How much damage will the character take?
+2. Height 9, not into water, health 60. Which messages will the game print?
+
+## Part B. Game calculations
+
+In these tasks the game calculates a value using a ready-made formula. You do not need to understand where the formula comes from. You need to carry it out correctly and follow the rules.
+
+The formulas use only addition, subtraction, and multiplication. As in math, parentheses come first, then multiplication, then addition and subtraction. For example, `20 + 4 * 5` equals `40`, not `120`.
+
+### Task 11. Falling object
+
+**Situation.** A game recalculates the position of an object many times per second. One such update is called a _frame_. Describe one frame of a falling object.
+
+**Formula.** The new height equals the height minus the falling speed:
+
+```text
+height = height - speed
+```
+
+**Rules.**
+
+- Height cannot drop below 0.
+- If height becomes 0, speed also becomes 0 and the game prints "Object landed".
+
+**Output.** Height and speed.
+
+**Example.** Height 50, speed 20. Output: 30, 20.
+
+**Think about it.**
+
+1. Height 15, speed 20. What will the game print?
+2. How many frames does an object need to fall from a height of 50 at speed 20?
+
+### Task 12. Car braking
+
+**Situation.** The player released the gas, and the car is braking. Describe one frame.
+
+**Formulas.** First, friction reduces speed. Then the car travels at the new speed:
+
+```text
+speed = speed - friction
+distance = distance + speed
+```
+
+**Rules.**
+
+- Speed cannot drop below 0.
+- If speed becomes 0, the game prints "The car stopped".
+
+**Output.** Speed and distance.
+
+**Example.** Speed 25, friction 4, distance 100. Output: 21, 121.
+
+**Think about it.**
+
+1. What distance would you get in the example if you swapped the two formulas?
+2. Speed 3, friction 5. What will the game print?
+
+### Task 13. Health regeneration
+
+**Situation.** The character is resting, and health recovers every second.
+
+**Formula.** Regeneration shows how much health recovers in one second:
+
+```text
+health = health + regeneration * seconds
+```
+
+**Rules.**
+
+- If health was 0, the character is dead and regeneration does not work. The game prints "Character died", and health does not change.
+- Health cannot go above the maximum.
+- If health becomes equal to the maximum, the game prints "Health restored".
+
+**Output.** Health.
+
+**Example.** Health 40, maximum health 100, regeneration 3, resting for 10 seconds. Output: 70.
+
+**Think about it.**
+
+1. What result would you get in the example if you calculated from left to right and ignored the order of operations?
+2. Health 90 out of 100, regeneration 5, resting for 4 seconds. Which messages and values will the game print?
+
+### Task 14. Bulk purchase
+
+**Situation.** The character buys several identical items from a merchant at once.
+
+**Formula.**
+
+```text
+total price = price of one item * quantity
+```
+
+**Rules.**
+
+- If 10 or more items are bought, the total price is reduced by 20 coins. The total price cannot drop below 0.
+- If the character has enough coins, the total price is paid and the game prints "Purchase complete".
+- If the character does not have enough coins, the game prints "Not enough coins", and the coins do not change.
+
+**Output.** The total price and coins.
+
+**Example.** One item costs 7, quantity 10, 60 coins. Output: "Purchase complete", 50, 10.
+
+**Think about it.**
+
+1. Make up data for which the total price would become negative without the "not below 0" rule.
+2. The character buys 9 items at 10 coins each and has 80 coins. What will the game print?
+
+### Task 15. Level score
+
+**Situation.** After a level, the game counts the score and rates the result.
+
+**Formula.**
+
+```text
+score = enemies * 10 + coins * 5
+```
+
+**Rules.**
+
+- If the player found the secret room, 50 is added to the score.
+- If the score is 150 or more, the game prints "Excellent". If the score is 80 or more, the game prints "Good". Otherwise the game prints "Try again".
+
+**Output.** The score.
+
+**Example.** 8 enemies defeated, 12 coins collected, secret room not found. Output: "Good", 140.
+
+**Think about it.**
+
+1. 5 enemies defeated, 14 coins collected, secret room found. What rating will the player get?
+2. What goes wrong if you check "80 or more" before "150 or more"?
+
+### Task 16. Race
+
+**Situation.** The character runs along a track at a constant speed.
+
+**Formula.**
+
+```text
+distance = speed * time
+```
+
+**Rules.**
+
+- If the distance is greater than or equal to the track length, the game prints "Finish".
+- Otherwise the game prints "Remaining" and the remaining distance, which is the track length minus the distance.
+
+**Output.** The distance covered.
+
+**Example.** Speed 6, time 15, track length 100. Output: "Remaining", 10, 90.
+
+**Think about it.**
+
+1. Speed is 0. Can the character reach the finish?
+2. Choose a speed and time so that the distance is exactly equal to a track length of 100. Which message will the game print?
+
+### Task 17. Spell series
+
+**Situation.** A mage wants to cast the same spell several times in a row.
+
+**Formula.**
+
+```text
+mana needed = spell cost * quantity
+```
+
+**Rules.**
+
+- If there is enough mana for the whole series, mana decreases by the amount needed and the game prints "Series complete". If less than 10 mana is left after the series, the game prints "Low mana".
+- If there is not enough mana for the whole series, the mage casts no spells at all. The game prints "Not enough mana", and mana does not change.
+
+**Output.** Mana.
+
+**Example.** Mana 100, spell cost 15, quantity 4. Output: "Series complete", 40.
+
+**Think about it.**
+
+1. Mana 50, cost 20, quantity 3. What will the game print?
+2. The quantity is 0. What will the game print, and why?
+
+### Task 18. Hitting armor
+
+**Situation.** The character hits an armored enemy. Each point of armor absorbs 2 points of damage.
+
+**Formula.**
+
+```text
+damage = attack - armor * 2
+```
+
+**Rules.**
+
+- Damage cannot be less than 1.
+- If the enemy has no armor, the game prints "Enemy has no armor".
+- Damage is subtracted from the enemy's health. Health cannot drop below 0. If it becomes 0, the game prints "Enemy defeated".
+
+**Output.** Damage and the enemy's health.
+
+**Example.** Attack 30, armor 8, enemy health 50. Output: 14, 36.
+
+**Think about it.**
+
+1. What damage would you get in the example if you mistakenly subtracted first and multiplied second? What would the formula mean then?
+2. Attack 10, armor 6. How much damage will the enemy take?
+
+### Task 19. Selling loot
+
+**Situation.** The character sells identical items collected in a dungeon to a merchant.
+
+**Formula.**
+
+```text
+coins = coins + number of items * price of one item
+```
+
+**Rules.**
+
+- If more than 10 items are sold, the merchant pays 1 coin less for each item. The price of one item cannot drop below 1.
+- If the character has 500 coins or more after the sale, the game prints "Rich".
+
+**Output.** Coins.
+
+**Example.** 120 coins, 12 items sold at a price of 5. Output: 168.
+
+**Think about it.**
+
+1. Exactly 10 items are sold. Does the merchant lower the price?
+2. For which data does the "price not below 1" rule change the result? Give an example.
+
+### Task 20. Battle experience
+
+**Situation.** After a battle, the character gains experience for the defeated opponents.
+
+**Formula.** A regular enemy gives 20 experience, and a boss gives 100:
+
+```text
+experience = experience + enemies * 20 + bosses * 100
+```
+
+**Rules.**
+
+- A new level requires 500 experience. If experience is 500 or more, the level goes up by 1, 500 is subtracted from experience, and the game prints "Level up". One battle can give only one level.
+- If at least one boss was defeated, the game prints "Boss defeated".
+
+**Output.** Level and experience.
+
+**Example.** Level 2, experience 300, 6 enemies and 1 boss defeated. Output: "Level up", "Boss defeated", 3, 20.
+
+**Think about it.**
+
+1. Experience 480, 1 enemy defeated, no bosses. Will there be a new level?
+2. How can you check "at least one boss" in pseudocode with a comparison?
 
 ## Report
 
-Write the report in Microsoft Word using the template [`report-template-en.docx`](./report-template-en.docx) and submit it as a single `.docx` file. Fill in the title page. Text in square brackets is a hint: replace it with your own text and delete the hints.
+Write the report in Microsoft Word using the template [`report-template-en.docx`](./report-template-en.docx) and submit it as a single `.docx` file. Fill in the title page. Text in square brackets in the template is a hint: replace it with your own text and delete the hints.
 
 For each of your two tasks, the report contains:
 
-1. The task number, its title, and its description.
-2. The problem analysis.
+1. The task number, its title, and its text.
+2. The problem analysis: inputs, output, and answers to the "Think about it" questions.
 3. The pseudocode.
 4. The flowchart.
 5. The data sets with expected results and the trace tables.
@@ -351,20 +658,20 @@ For each of your two tasks, the report contains:
 
 Any completed `[extra]` tasks and the conclusions go at the end of the report.
 
-The report is graded on:
+## Grading criteria
 
-- whether the algorithm is correct for all data sets;
-- whether the inputs are identified correctly;
-- whether the pseudocode and the flowchart match each other, with the same order of steps and the same names;
-- the choice of data sets, especially the boundary cases;
-- whether the trace tables are correct.
+- The algorithm gives the correct result for all data sets.
+- The inputs are identified correctly.
+- The answers to the "Think about it" questions are correct.
+- The pseudocode and the flowchart match each other, with the same order of steps and the same names.
+- The data sets go through every branch of the algorithm and include boundary cases.
+- The trace tables are filled in correctly.
 
 ## Review questions
 
 1. Which properties of an algorithm does the instruction "deal enough damage to the enemy" break?
 2. Why can the assignment `SET health = health - damage` not be read as a mathematical equation?
-3. How can you tell inputs apart from fixed game rules when reading a task description?
+3. How can you tell inputs apart from game rules when reading a task?
 4. How is a boundary case different from a normal case, and why should it be checked separately?
 5. How can a trace table help you find the step where an algorithm started to go wrong?
 6. Pick two steps in one of your tasks whose order matters. What changes if you swap them?
-7. Why should you check that the divisor is not zero before dividing? In which Part B task does this matter?
