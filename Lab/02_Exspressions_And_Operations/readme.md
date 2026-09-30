@@ -4,10 +4,6 @@
 
 Learn to write calculations as C++ expressions, choose the right types for variables, take into account the order of operations and how integer division works, and check a program on several sets of data.
 
-## Note
-
-Tasks marked `[extra]` are optional and count toward a higher grade.
-
 ## What to submit
 
 1. Five C++ programs, one for each task you chose. Each program is stored in its own file: `task_1.cpp`, `task_8.cpp`, and so on, named after the task number.
