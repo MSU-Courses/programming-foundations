@@ -1,4 +1,4 @@
-# Lab 2. Expressions and Operations in C++
+# Lab 2. Expressions and Operations
 
 ## Objective
 
