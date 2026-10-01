@@ -1,0 +1,26 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="25 39 830 262" width="830" height="262" role="img" aria-label="Блок ветвления целиком находится внутри блока цикла" font-family="Consolas, Menlo, 'DejaVu Sans Mono', 'Liberation Mono', monospace">
+<style>
+.bg{fill:#ffffff}.surf{fill:#ffffff}.panel{fill:#f3f6fb}
+.ln{stroke:#ccd6e5}.tx{fill:#16202f}.tm{fill:#64748b}
+.ac{fill:#4338ca}.acs{stroke:#4338ca}.acb{fill:#eef0ff}.aci{fill:#3730a3}
+.wn{fill:#b4232b}.wns{stroke:#b4232b}.wnb{fill:#fdf1f1}
+.ok{fill:#0f766e}.oks{stroke:#0f766e}.okb{fill:#eaf6f4}
+.ar{stroke:#16202f}.onacc{fill:#ffffff}
+</style><defs>
+<marker id="ai" viewBox="0 0 10 10" refX="8.5" refY="5" markerWidth="6.5" markerHeight="6.5" orient="auto-start-reverse"><path class="tx" d="M 0 1 L 9 5 L 0 9 z" fill="#16202f"/></marker>
+<marker id="aa" viewBox="0 0 10 10" refX="8.5" refY="5" markerWidth="6.5" markerHeight="6.5" orient="auto-start-reverse"><path class="ac" d="M 0 1 L 9 5 L 0 9 z" fill="#4338ca"/></marker>
+<marker id="aw" viewBox="0 0 10 10" refX="8.5" refY="5" markerWidth="6.5" markerHeight="6.5" orient="auto-start-reverse"><path class="wn" d="M 0 1 L 9 5 L 0 9 z" fill="#b4232b"/></marker>
+<marker id="ao" viewBox="0 0 10 10" refX="8.5" refY="5" markerWidth="6.5" markerHeight="6.5" orient="auto-start-reverse"><path class="ok" d="M 0 1 L 9 5 L 0 9 z" fill="#0f766e"/></marker>
+</defs>
+
+<rect class="bg" x="25" y="39" width="830" height="262" fill="#ffffff"/>
+<rect class="acb acs" x="40" y="54" width="800" height="232" rx="12" fill="#eef0ff" stroke="#4338ca" stroke-width="1.5"/>
+<text class="aci" x="72.0" y="86" text-anchor="start" font-size="12.88" font-weight="700" fill="#3730a3">WHILE  здоровье больше нуля</text>
+<rect class="surf ln" x="72" y="100" width="736" height="142" rx="12" fill="#ffffff" stroke="#ccd6e5" stroke-width="1.5"/>
+<text class="tx" x="104.0" y="130" text-anchor="start" font-size="11.96" font-weight="500" fill="#16202f">INPUT  урон</text>
+<text class="tx" x="104.0" y="156" text-anchor="start" font-size="11.96" font-weight="500" fill="#16202f">SET  здоровье = здоровье - урон</text>
+<rect class="okb oks" x="104" y="170" width="672" height="60" rx="12" fill="#eaf6f4" stroke="#0f766e" stroke-width="1.5"/>
+<text class="ok" x="132.0" y="196" text-anchor="start" font-size="11.96" font-weight="700" fill="#0f766e">IF  здоровье меньше или равно нулю</text>
+<text class="tx" x="160.0" y="219" text-anchor="start" font-size="11.5" font-weight="500" fill="#16202f">OUTPUT  «Game Over»</text>
+<text class="aci" x="72.0" y="268" text-anchor="start" font-size="12.88" font-weight="700" fill="#3730a3">END WHILE</text>
+</svg>

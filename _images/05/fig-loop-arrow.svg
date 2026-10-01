@@ -1,0 +1,28 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="100 39 336 272" width="336" height="272" role="img" aria-label="Стрелка от условия возвращается назад и образует повторение" font-family="Consolas, Menlo, 'DejaVu Sans Mono', 'Liberation Mono', monospace">
+<style>
+.bg{fill:#ffffff}.surf{fill:#ffffff}.panel{fill:#f3f6fb}
+.ln{stroke:#ccd6e5}.tx{fill:#16202f}.tm{fill:#64748b}
+.ac{fill:#4338ca}.acs{stroke:#4338ca}.acb{fill:#eef0ff}.aci{fill:#3730a3}
+.wn{fill:#b4232b}.wns{stroke:#b4232b}.wnb{fill:#fdf1f1}
+.ok{fill:#0f766e}.oks{stroke:#0f766e}.okb{fill:#eaf6f4}
+.ar{stroke:#16202f}.onacc{fill:#ffffff}
+</style><defs>
+<marker id="ai" viewBox="0 0 10 10" refX="8.5" refY="5" markerWidth="6.5" markerHeight="6.5" orient="auto-start-reverse"><path class="tx" d="M 0 1 L 9 5 L 0 9 z" fill="#16202f"/></marker>
+<marker id="aa" viewBox="0 0 10 10" refX="8.5" refY="5" markerWidth="6.5" markerHeight="6.5" orient="auto-start-reverse"><path class="ac" d="M 0 1 L 9 5 L 0 9 z" fill="#4338ca"/></marker>
+<marker id="aw" viewBox="0 0 10 10" refX="8.5" refY="5" markerWidth="6.5" markerHeight="6.5" orient="auto-start-reverse"><path class="wn" d="M 0 1 L 9 5 L 0 9 z" fill="#b4232b"/></marker>
+<marker id="ao" viewBox="0 0 10 10" refX="8.5" refY="5" markerWidth="6.5" markerHeight="6.5" orient="auto-start-reverse"><path class="ok" d="M 0 1 L 9 5 L 0 9 z" fill="#0f766e"/></marker>
+</defs>
+
+<rect class="bg" x="100" y="39" width="336" height="272" fill="#ffffff"/>
+<rect class="surf ln" x="200" y="54" width="220" height="46" rx="12" fill="#ffffff" stroke="#ccd6e5" stroke-width="1.5"/>
+<text class="tx" x="310.0" y="83" text-anchor="middle" font-size="11.96" font-weight="500" fill="#16202f">создать врага</text>
+<line class="ar" x1="310" y1="100" x2="310" y2="124" stroke="#16202f" stroke-width="1.8" stroke-linecap="round" marker-end="url(#ai)"/>
+<path class="acs" d="M 310 130 L 416 174 L 310 218 L 204 174 Z" fill="none" stroke="#4338ca" stroke-width="1.6" stroke-linecap="round" stroke-linejoin="round"/>
+<text class="aci" x="310.0" y="179" text-anchor="middle" font-size="11.5" font-weight="700" fill="#3730a3">нужен ещё?</text>
+<path class="acs" d="M 204 174 L 120 174 L 120 77 L 192 77" fill="none" stroke="#4338ca" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round" marker-end="url(#aa)"/>
+<text class="ac" x="128.0" y="196" text-anchor="start" font-size="11.04" font-weight="600" fill="#4338ca">да</text>
+<line class="ar" x1="310" y1="218" x2="310" y2="244" stroke="#16202f" stroke-width="1.8" stroke-linecap="round" marker-end="url(#ai)"/>
+<text class="tm" x="322.0" y="236" text-anchor="start" font-size="11.04" font-weight="600" fill="#64748b">нет</text>
+<rect class="surf ln" x="200" y="250" width="220" height="46" rx="12" fill="#ffffff" stroke="#ccd6e5" stroke-width="1.5"/>
+<text class="tx" x="310.0" y="279" text-anchor="middle" font-size="11.96" font-weight="500" fill="#16202f">начать бой</text>
+</svg>
