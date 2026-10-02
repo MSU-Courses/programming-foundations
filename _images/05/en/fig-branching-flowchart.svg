@@ -1,0 +1,41 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="24 33 636 504" width="636" height="504" role="img" aria-label="A flowchart with input, subtraction, a condition, and two output branches" font-family="Consolas, Menlo, 'DejaVu Sans Mono', 'Liberation Mono', monospace">
+<style>
+.bg{fill:#ffffff}.surf{fill:#ffffff}.panel{fill:#f3f6fb}
+.ln{stroke:#ccd6e5}.tx{fill:#16202f}.tm{fill:#64748b}
+.ac{fill:#4338ca}.acs{stroke:#4338ca}.acb{fill:#eef0ff}.aci{fill:#3730a3}
+.wn{fill:#b4232b}.wns{stroke:#b4232b}.wnb{fill:#fdf1f1}
+.ok{fill:#0f766e}.oks{stroke:#0f766e}.okb{fill:#eaf6f4}
+.ar{stroke:#16202f}.onacc{fill:#ffffff}
+</style><defs>
+<marker id="ai" viewBox="0 0 10 10" refX="8.5" refY="5" markerWidth="6.5" markerHeight="6.5" orient="auto-start-reverse"><path class="tx" d="M 0 1 L 9 5 L 0 9 z" fill="#16202f"/></marker>
+<marker id="aa" viewBox="0 0 10 10" refX="8.5" refY="5" markerWidth="6.5" markerHeight="6.5" orient="auto-start-reverse"><path class="ac" d="M 0 1 L 9 5 L 0 9 z" fill="#4338ca"/></marker>
+<marker id="aw" viewBox="0 0 10 10" refX="8.5" refY="5" markerWidth="6.5" markerHeight="6.5" orient="auto-start-reverse"><path class="wn" d="M 0 1 L 9 5 L 0 9 z" fill="#b4232b"/></marker>
+<marker id="ao" viewBox="0 0 10 10" refX="8.5" refY="5" markerWidth="6.5" markerHeight="6.5" orient="auto-start-reverse"><path class="ok" d="M 0 1 L 9 5 L 0 9 z" fill="#0f766e"/></marker>
+</defs>
+
+<rect class="bg" x="24" y="33" width="636" height="504" fill="#ffffff"/>
+<rect class="surf ln" x="260" y="48" width="180" height="42" rx="21" fill="#ffffff" stroke="#ccd6e5" stroke-width="1.5"/>
+<text class="tx" x="350.0" y="75" text-anchor="middle" font-size="11.96" font-weight="600" fill="#16202f">start</text>
+<line class="ar" x1="350" y1="90" x2="350" y2="112" stroke="#16202f" stroke-width="1.8" stroke-linecap="round" marker-end="url(#ai)"/>
+<path class="ar" d="M 236 164 L 258 118 L 464 118 L 442 164 Z" fill="none" stroke="#16202f" stroke-width="1.6" stroke-linecap="round" stroke-linejoin="round"/>
+<text class="tx" x="350.0" y="146" text-anchor="middle" font-size="11.5" font-weight="500" fill="#16202f">input health and damage</text>
+<line class="ar" x1="350" y1="164" x2="350" y2="186" stroke="#16202f" stroke-width="1.8" stroke-linecap="round" marker-end="url(#ai)"/>
+<rect class="surf ln" x="235" y="192" width="230" height="46" rx="12" fill="#ffffff" stroke="#ccd6e5" stroke-width="1.5"/>
+<text class="tx" x="350.0" y="221" text-anchor="middle" font-size="11.5" font-weight="500" fill="#16202f">health = health - damage</text>
+<line class="ar" x1="350" y1="238" x2="350" y2="260" stroke="#16202f" stroke-width="1.8" stroke-linecap="round" marker-end="url(#ai)"/>
+<path class="acs" d="M 350 266 L 452 310 L 350 354 L 248 310 Z" fill="none" stroke="#4338ca" stroke-width="1.6" stroke-linecap="round" stroke-linejoin="round"/>
+<text class="aci" x="350.0" y="315" text-anchor="middle" font-size="11.96" font-weight="700" fill="#3730a3">health &lt;= 0</text>
+<path class="ar" d="M 248 310 L 150 310 L 150 368" fill="none" stroke="#16202f" stroke-width="1.6" stroke-linecap="round" stroke-linejoin="round" marker-end="url(#ai)"/>
+<text class="tm" x="236.0" y="300" text-anchor="end" font-size="10.58" font-weight="600" fill="#64748b">yes</text>
+<path class="ar" d="M 452 310 L 550 310 L 550 368" fill="none" stroke="#16202f" stroke-width="1.6" stroke-linecap="round" stroke-linejoin="round" marker-end="url(#ai)"/>
+<text class="tm" x="460.0" y="300" text-anchor="start" font-size="10.58" font-weight="600" fill="#64748b">no</text>
+<path class="oks" d="M 44 420 L 66 374 L 256 374 L 234 420 Z" fill="none" stroke="#0f766e" stroke-width="1.6" stroke-linecap="round" stroke-linejoin="round"/>
+<text class="ok" x="150.0" y="402" text-anchor="middle" font-size="11.04" font-weight="600" fill="#0f766e">output “Game Over”</text>
+<path class="ar" d="M 462 420 L 484 374 L 640 374 L 618 420 Z" fill="none" stroke="#16202f" stroke-width="1.6" stroke-linecap="round" stroke-linejoin="round"/>
+<text class="tx" x="551.0" y="402" text-anchor="middle" font-size="11.04" font-weight="600" fill="#16202f">output health</text>
+<path class="ar" d="M 150 420 L 150 452 L 550 452 L 550 420" fill="none" stroke="#16202f" stroke-width="1.6" stroke-linecap="round" stroke-linejoin="round"/>
+<line class="ar" x1="350" y1="452" x2="350" y2="474" stroke="#16202f" stroke-width="1.8" stroke-linecap="round" marker-end="url(#ai)"/>
+<rect class="surf ln" x="260" y="480" width="180" height="42" rx="21" fill="#ffffff" stroke="#ccd6e5" stroke-width="1.5"/>
+<text class="tx" x="350.0" y="507" text-anchor="middle" font-size="11.96" font-weight="600" fill="#16202f">end</text>
+</svg>
+

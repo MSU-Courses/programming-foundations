@@ -1,0 +1,55 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="25 10.2 830 284.8" width="830" height="284.8" role="img" aria-label="The three basic control structures: sequence, selection, and iteration" font-family="Consolas, Menlo, 'DejaVu Sans Mono', 'Liberation Mono', monospace">
+<style>
+.bg{fill:#ffffff}.surf{fill:#ffffff}.panel{fill:#f3f6fb}
+.ln{stroke:#ccd6e5}.tx{fill:#16202f}.tm{fill:#64748b}
+.ac{fill:#4338ca}.acs{stroke:#4338ca}.acb{fill:#eef0ff}.aci{fill:#3730a3}
+.wn{fill:#b4232b}.wns{stroke:#b4232b}.wnb{fill:#fdf1f1}
+.ok{fill:#0f766e}.oks{stroke:#0f766e}.okb{fill:#eaf6f4}
+.ar{stroke:#16202f}.onacc{fill:#ffffff}
+</style><defs>
+<marker id="ai" viewBox="0 0 10 10" refX="8.5" refY="5" markerWidth="6.5" markerHeight="6.5" orient="auto-start-reverse"><path class="tx" d="M 0 1 L 9 5 L 0 9 z" fill="#16202f"/></marker>
+<marker id="aa" viewBox="0 0 10 10" refX="8.5" refY="5" markerWidth="6.5" markerHeight="6.5" orient="auto-start-reverse"><path class="ac" d="M 0 1 L 9 5 L 0 9 z" fill="#4338ca"/></marker>
+<marker id="aw" viewBox="0 0 10 10" refX="8.5" refY="5" markerWidth="6.5" markerHeight="6.5" orient="auto-start-reverse"><path class="wn" d="M 0 1 L 9 5 L 0 9 z" fill="#b4232b"/></marker>
+<marker id="ao" viewBox="0 0 10 10" refX="8.5" refY="5" markerWidth="6.5" markerHeight="6.5" orient="auto-start-reverse"><path class="ok" d="M 0 1 L 9 5 L 0 9 z" fill="#0f766e"/></marker>
+</defs>
+
+<rect class="bg" x="25" y="10.2" width="830" height="284.8" fill="#ffffff"/>
+<rect class="panel ln" x="40" y="56" width="240" height="224" rx="12" fill="#f3f6fb" stroke="#ccd6e5" stroke-width="1.5"/>
+<text class="tx" x="160.0" y="38" text-anchor="middle" font-size="13.8" font-weight="600" fill="#16202f">Sequence</text>
+<rect class="panel ln" x="320" y="56" width="240" height="224" rx="12" fill="#f3f6fb" stroke="#ccd6e5" stroke-width="1.5"/>
+<text class="tx" x="440.0" y="38" text-anchor="middle" font-size="13.8" font-weight="600" fill="#16202f">Selection</text>
+<rect class="panel ln" x="600" y="56" width="240" height="224" rx="12" fill="#f3f6fb" stroke="#ccd6e5" stroke-width="1.5"/>
+<text class="tx" x="720.0" y="38" text-anchor="middle" font-size="13.8" font-weight="600" fill="#16202f">Iteration</text>
+<rect class="surf ln" x="80" y="84" width="160" height="38" rx="8" fill="#ffffff" stroke="#ccd6e5" stroke-width="1.5"/>
+<text class="tx" x="160.0" y="107.3056" text-anchor="middle" font-size="11.96" font-weight="500" fill="#16202f">step 1</text>
+<line class="ar" x1="160" y1="122" x2="160" y2="136" stroke="#16202f" stroke-width="1.8" stroke-linecap="round" marker-end="url(#ai)"/>
+<rect class="surf ln" x="80" y="142" width="160" height="38" rx="8" fill="#ffffff" stroke="#ccd6e5" stroke-width="1.5"/>
+<text class="tx" x="160.0" y="165.3056" text-anchor="middle" font-size="11.96" font-weight="500" fill="#16202f">step 2</text>
+<line class="ar" x1="160" y1="180" x2="160" y2="194" stroke="#16202f" stroke-width="1.8" stroke-linecap="round" marker-end="url(#ai)"/>
+<rect class="surf ln" x="80" y="200" width="160" height="38" rx="8" fill="#ffffff" stroke="#ccd6e5" stroke-width="1.5"/>
+<text class="tx" x="160.0" y="223.3056" text-anchor="middle" font-size="11.96" font-weight="500" fill="#16202f">step 3</text>
+<path class="acs" d="M 440 86 L 502 118 L 440 150 L 378 118 Z" fill="none" stroke="#4338ca" stroke-width="1.6" stroke-linecap="round" stroke-linejoin="round"/>
+<text class="aci" x="440.0" y="123" text-anchor="middle" font-size="11.04" font-weight="600" fill="#3730a3">condition</text>
+<path class="ar" d="M 378 118 L 356 118 L 356 166" fill="none" stroke="#16202f" stroke-width="1.6" stroke-linecap="round" stroke-linejoin="round" marker-end="url(#ai)"/>
+<path class="ar" d="M 502 118 L 524 118 L 524 166" fill="none" stroke="#16202f" stroke-width="1.6" stroke-linecap="round" stroke-linejoin="round" marker-end="url(#ai)"/>
+<text class="tm" x="348.0" y="140" text-anchor="end" font-size="10.58" font-weight="400" fill="#64748b">yes</text>
+<text class="tm" x="532.0" y="140" text-anchor="start" font-size="10.58" font-weight="400" fill="#64748b">no</text>
+<rect class="surf ln" x="312" y="172" width="88" height="36" rx="8" fill="#ffffff" stroke="#ccd6e5" stroke-width="1.5"/>
+<text class="tx" x="356.0" y="194.14" text-anchor="middle" font-size="11.5" font-weight="500" fill="#16202f">step A</text>
+<rect class="surf ln" x="480" y="172" width="88" height="36" rx="8" fill="#ffffff" stroke="#ccd6e5" stroke-width="1.5"/>
+<text class="tx" x="524.0" y="194.14" text-anchor="middle" font-size="11.5" font-weight="500" fill="#16202f">step B</text>
+<path class="ar" d="M 356 208 L 356 232 L 524 232 L 524 208" fill="none" stroke="#16202f" stroke-width="1.6" stroke-linecap="round" stroke-linejoin="round"/>
+<line class="ar" x1="440" y1="232" x2="440" y2="258" stroke="#16202f" stroke-width="1.8" stroke-linecap="round" marker-end="url(#ai)"/>
+<rect class="surf ln" x="652" y="84" width="152" height="38" rx="8" fill="#ffffff" stroke="#ccd6e5" stroke-width="1.5"/>
+<text class="tx" x="728.0" y="107.3056" text-anchor="middle" font-size="11.96" font-weight="500" fill="#16202f">step</text>
+<line class="ar" x1="728" y1="122" x2="728" y2="140" stroke="#16202f" stroke-width="1.8" stroke-linecap="round" marker-end="url(#ai)"/>
+<path class="acs" d="M 728 146 L 790 176 L 728 206 L 666 176 Z" fill="none" stroke="#4338ca" stroke-width="1.6" stroke-linecap="round" stroke-linejoin="round"/>
+<text class="aci" x="728.0" y="181" text-anchor="middle" font-size="10.58" font-weight="600" fill="#3730a3">repeat?</text>
+<path class="acs" d="M 666 176 L 634 176 L 634 103 L 648 103" fill="none" stroke="#4338ca" stroke-width="1.6" stroke-linecap="round" stroke-linejoin="round" marker-end="url(#aa)"/>
+<text class="ac" x="638.0" y="196" text-anchor="start" font-size="10.12" font-weight="400" fill="#4338ca">yes</text>
+<line class="ar" x1="728" y1="206" x2="728" y2="240" stroke="#16202f" stroke-width="1.8" stroke-linecap="round" marker-end="url(#ai)"/>
+<text class="tm" x="740.0" y="228" text-anchor="start" font-size="10.12" font-weight="400" fill="#64748b">no</text>
+<rect class="surf ln" x="652" y="244" width="152" height="30" rx="8" fill="#ffffff" stroke="#ccd6e5" stroke-width="1.5"/>
+<text class="tx" x="728.0" y="262.9744" text-anchor="middle" font-size="11.04" font-weight="500" fill="#16202f">continue</text>
+</svg>
+

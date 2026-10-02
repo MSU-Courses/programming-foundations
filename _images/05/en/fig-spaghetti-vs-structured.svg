@@ -1,0 +1,50 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="25 6.2 830 364.8" width="830" height="364.8" role="img" aria-label="A program with arbitrary jumps and a structured program" font-family="Consolas, Menlo, 'DejaVu Sans Mono', 'Liberation Mono', monospace">
+<style>
+.bg{fill:#ffffff}.surf{fill:#ffffff}.panel{fill:#f3f6fb}
+.ln{stroke:#ccd6e5}.tx{fill:#16202f}.tm{fill:#64748b}
+.ac{fill:#4338ca}.acs{stroke:#4338ca}.acb{fill:#eef0ff}.aci{fill:#3730a3}
+.wn{fill:#b4232b}.wns{stroke:#b4232b}.wnb{fill:#fdf1f1}
+.ok{fill:#0f766e}.oks{stroke:#0f766e}.okb{fill:#eaf6f4}
+.ar{stroke:#16202f}.onacc{fill:#ffffff}
+</style><defs>
+<marker id="ai" viewBox="0 0 10 10" refX="8.5" refY="5" markerWidth="6.5" markerHeight="6.5" orient="auto-start-reverse"><path class="tx" d="M 0 1 L 9 5 L 0 9 z" fill="#16202f"/></marker>
+<marker id="aa" viewBox="0 0 10 10" refX="8.5" refY="5" markerWidth="6.5" markerHeight="6.5" orient="auto-start-reverse"><path class="ac" d="M 0 1 L 9 5 L 0 9 z" fill="#4338ca"/></marker>
+<marker id="aw" viewBox="0 0 10 10" refX="8.5" refY="5" markerWidth="6.5" markerHeight="6.5" orient="auto-start-reverse"><path class="wn" d="M 0 1 L 9 5 L 0 9 z" fill="#b4232b"/></marker>
+<marker id="ao" viewBox="0 0 10 10" refX="8.5" refY="5" markerWidth="6.5" markerHeight="6.5" orient="auto-start-reverse"><path class="ok" d="M 0 1 L 9 5 L 0 9 z" fill="#0f766e"/></marker>
+</defs>
+
+<rect class="bg" x="25" y="6.2" width="830" height="364.8" fill="#ffffff"/>
+<text class="tx" x="230.0" y="34" text-anchor="middle" font-size="13.8" font-weight="600" fill="#16202f">Jump to any line</text>
+<text class="tm" x="230.0" y="52" text-anchor="middle" font-size="10.58" font-weight="400" fill="#64748b">execution is almost impossible to follow</text>
+<rect class="wnb wns" x="40" y="66" width="380" height="290" rx="12" fill="#fdf1f1" stroke="#b4232b" stroke-width="1.5"/>
+<text class="tm" x="72.0" y="98" text-anchor="start" font-size="11.5" font-weight="500" fill="#64748b">line 1</text>
+<text class="tm" x="72.0" y="136" text-anchor="start" font-size="11.5" font-weight="500" fill="#64748b">line 2</text>
+<text class="tm" x="72.0" y="174" text-anchor="start" font-size="11.5" font-weight="500" fill="#64748b">line 3</text>
+<text class="tm" x="72.0" y="212" text-anchor="start" font-size="11.5" font-weight="500" fill="#64748b">line 4</text>
+<text class="tm" x="72.0" y="250" text-anchor="start" font-size="11.5" font-weight="500" fill="#64748b">line 5</text>
+<text class="tm" x="72.0" y="288" text-anchor="start" font-size="11.5" font-weight="500" fill="#64748b">line 6</text>
+<text class="tm" x="72.0" y="326" text-anchor="start" font-size="11.5" font-weight="500" fill="#64748b">line 7</text>
+<path class="wns" d="M 300 94 C 372 120, 372 206, 306 240" fill="none" stroke="#b4232b" stroke-width="1.6" stroke-linecap="round" stroke-linejoin="round" marker-end="url(#aw)"/>
+<path class="wns" d="M 296 244 C 220 288, 190 132, 258 130" fill="none" stroke="#b4232b" stroke-width="1.6" stroke-linecap="round" stroke-linejoin="round" marker-end="url(#aw)"/>
+<path class="wns" d="M 300 170 C 364 232, 356 318, 302 314" fill="none" stroke="#b4232b" stroke-width="1.6" stroke-linecap="round" stroke-linejoin="round" marker-end="url(#aw)"/>
+<path class="wns" d="M 268 318 C 184 288, 198 198, 256 206" fill="none" stroke="#b4232b" stroke-width="1.6" stroke-linecap="round" stroke-linejoin="round" marker-end="url(#aw)"/>
+<path class="wns" d="M 300 280 C 358 258, 352 118, 302 116" fill="none" stroke="#b4232b" stroke-width="1.6" stroke-linecap="round" stroke-linejoin="round" marker-end="url(#aw)"/>
+<text class="tx" x="650.0" y="34" text-anchor="middle" font-size="13.8" font-weight="600" fill="#16202f">Structured program</text>
+<text class="tm" x="650.0" y="52" text-anchor="middle" font-size="10.58" font-weight="400" fill="#64748b">control structures are nested</text>
+<rect class="panel ln" x="460" y="66" width="380" height="290" rx="12" fill="#f3f6fb" stroke="#ccd6e5" stroke-width="1.5"/>
+<rect class="surf ln" x="492" y="92" width="316" height="46" rx="8" fill="#ffffff" stroke="#ccd6e5" stroke-width="1.5"/>
+<text class="tx" x="650.0" y="119.3056" text-anchor="middle" font-size="11.96" font-weight="500" fill="#16202f">action</text>
+<line class="ar" x1="650" y1="138" x2="650" y2="156" stroke="#16202f" stroke-width="1.8" stroke-linecap="round" marker-end="url(#ai)"/>
+<rect class="surf ln" x="492" y="162" width="316" height="94" rx="12" fill="#ffffff" stroke="#ccd6e5" stroke-width="1.5"/>
+<text class="tx" x="650.0" y="186" text-anchor="middle" font-size="11.96" font-weight="600" fill="#16202f">selection</text>
+<rect class="acb acs" x="516" y="198" width="132" height="42" rx="8" fill="#eef0ff" stroke="#4338ca" stroke-width="1.5"/>
+<text class="aci" x="582.0" y="223.14" text-anchor="middle" font-size="11.5" font-weight="600" fill="#3730a3">yes</text>
+<rect class="panel ln" x="660" y="198" width="124" height="42" rx="8" fill="#f3f6fb" stroke="#ccd6e5" stroke-width="1.5"/>
+<text class="tx" x="722.0" y="223.14" text-anchor="middle" font-size="11.5" font-weight="600" fill="#16202f">no</text>
+<line class="ar" x1="650" y1="256" x2="650" y2="274" stroke="#16202f" stroke-width="1.8" stroke-linecap="round" marker-end="url(#ai)"/>
+<rect class="surf ln" x="492" y="280" width="316" height="60" rx="12" fill="#ffffff" stroke="#ccd6e5" stroke-width="1.5"/>
+<text class="tx" x="650.0" y="302" text-anchor="middle" font-size="11.96" font-weight="600" fill="#16202f">iteration</text>
+<rect class="acb acs" x="516" y="310" width="268" height="22" rx="8" fill="#eef0ff" stroke="#4338ca" stroke-width="1.5"/>
+<text class="aci" x="650.0" y="324.6432" text-anchor="middle" font-size="10.12" font-weight="600" fill="#3730a3">loop body</text>
+</svg>
+
