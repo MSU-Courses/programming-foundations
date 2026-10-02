@@ -1,0 +1,83 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="1732" height="476" viewBox="0 0 1732 476">
+<title>Truth tables for AND, OR, and NOT</title>
+<desc>AND is true only when both operands are true. OR is true when at least one operand is true. NOT reverses a Boolean value.</desc>
+<rect width="1732" height="476" fill="#ffffff"/>
+<text x="298.0" y="37" text-anchor="middle" dominant-baseline="central" font-family="DejaVu Sans, sans-serif" font-size="20" font-weight="400" fill="#64748b">true only when both are true</text>
+<text x="298.0" y="63" text-anchor="middle" dominant-baseline="central" font-family="DejaVu Sans Mono, sans-serif" font-size="30" font-weight="700" fill="#0f172a">A &amp;&amp; B</text>
+<rect x="18.0" y="96" width="186.66666666666666" height="64" fill="#f8fafc" stroke="#cbd5e1" stroke-width="2"/>
+<text x="111.33333333333333" y="129" text-anchor="middle" dominant-baseline="central" font-family="DejaVu Sans, sans-serif" font-size="24" font-weight="400" fill="#64748b">A</text>
+<rect x="204.66666666666666" y="96" width="186.66666666666666" height="64" fill="#f8fafc" stroke="#cbd5e1" stroke-width="2"/>
+<text x="298.0" y="129" text-anchor="middle" dominant-baseline="central" font-family="DejaVu Sans, sans-serif" font-size="24" font-weight="400" fill="#64748b">B</text>
+<rect x="391.3333333333333" y="96" width="186.66666666666666" height="64" fill="#f8fafc" stroke="#cbd5e1" stroke-width="2"/>
+<text x="484.66666666666663" y="129" text-anchor="middle" dominant-baseline="central" font-family="DejaVu Sans, sans-serif" font-size="24" font-weight="400" fill="#64748b">result</text>
+<rect x="18.0" y="160" width="186.66666666666666" height="68" fill="#ffffff" stroke="#cbd5e1" stroke-width="2"/>
+<text x="111.33333333333333" y="194" text-anchor="middle" dominant-baseline="central" font-family="DejaVu Sans, sans-serif" font-size="24" font-weight="400" fill="#0f172a">true</text>
+<rect x="204.66666666666666" y="160" width="186.66666666666666" height="68" fill="#ffffff" stroke="#cbd5e1" stroke-width="2"/>
+<text x="298.0" y="194" text-anchor="middle" dominant-baseline="central" font-family="DejaVu Sans, sans-serif" font-size="24" font-weight="400" fill="#0f172a">true</text>
+<rect x="391.3333333333333" y="160" width="186.66666666666666" height="68" fill="#f1f5f9" stroke="#cbd5e1" stroke-width="2"/>
+<text x="484.66666666666663" y="194" text-anchor="middle" dominant-baseline="central" font-family="DejaVu Sans, sans-serif" font-size="24" font-weight="700" fill="#0f172a">true</text>
+<rect x="18.0" y="228" width="186.66666666666666" height="68" fill="#ffffff" stroke="#cbd5e1" stroke-width="2"/>
+<text x="111.33333333333333" y="262" text-anchor="middle" dominant-baseline="central" font-family="DejaVu Sans, sans-serif" font-size="24" font-weight="400" fill="#0f172a">true</text>
+<rect x="204.66666666666666" y="228" width="186.66666666666666" height="68" fill="#ffffff" stroke="#cbd5e1" stroke-width="2"/>
+<text x="298.0" y="262" text-anchor="middle" dominant-baseline="central" font-family="DejaVu Sans, sans-serif" font-size="24" font-weight="400" fill="#94a3b8">false</text>
+<rect x="391.3333333333333" y="228" width="186.66666666666666" height="68" fill="#f1f5f9" stroke="#cbd5e1" stroke-width="2"/>
+<text x="484.66666666666663" y="262" text-anchor="middle" dominant-baseline="central" font-family="DejaVu Sans, sans-serif" font-size="24" font-weight="400" fill="#94a3b8">false</text>
+<rect x="18.0" y="296" width="186.66666666666666" height="68" fill="#ffffff" stroke="#cbd5e1" stroke-width="2"/>
+<text x="111.33333333333333" y="330" text-anchor="middle" dominant-baseline="central" font-family="DejaVu Sans, sans-serif" font-size="24" font-weight="400" fill="#94a3b8">false</text>
+<rect x="204.66666666666666" y="296" width="186.66666666666666" height="68" fill="#ffffff" stroke="#cbd5e1" stroke-width="2"/>
+<text x="298.0" y="330" text-anchor="middle" dominant-baseline="central" font-family="DejaVu Sans, sans-serif" font-size="24" font-weight="400" fill="#0f172a">true</text>
+<rect x="391.3333333333333" y="296" width="186.66666666666666" height="68" fill="#f1f5f9" stroke="#cbd5e1" stroke-width="2"/>
+<text x="484.66666666666663" y="330" text-anchor="middle" dominant-baseline="central" font-family="DejaVu Sans, sans-serif" font-size="24" font-weight="400" fill="#94a3b8">false</text>
+<rect x="18.0" y="364" width="186.66666666666666" height="68" fill="#ffffff" stroke="#cbd5e1" stroke-width="2"/>
+<text x="111.33333333333333" y="398" text-anchor="middle" dominant-baseline="central" font-family="DejaVu Sans, sans-serif" font-size="24" font-weight="400" fill="#94a3b8">false</text>
+<rect x="204.66666666666666" y="364" width="186.66666666666666" height="68" fill="#ffffff" stroke="#cbd5e1" stroke-width="2"/>
+<text x="298.0" y="398" text-anchor="middle" dominant-baseline="central" font-family="DejaVu Sans, sans-serif" font-size="24" font-weight="400" fill="#94a3b8">false</text>
+<rect x="391.3333333333333" y="364" width="186.66666666666666" height="68" fill="#f1f5f9" stroke="#cbd5e1" stroke-width="2"/>
+<text x="484.66666666666663" y="398" text-anchor="middle" dominant-baseline="central" font-family="DejaVu Sans, sans-serif" font-size="24" font-weight="400" fill="#94a3b8">false</text>
+<text x="918.0" y="37" text-anchor="middle" dominant-baseline="central" font-family="DejaVu Sans, sans-serif" font-size="20" font-weight="400" fill="#64748b">true when at least one is true</text>
+<text x="918.0" y="63" text-anchor="middle" dominant-baseline="central" font-family="DejaVu Sans Mono, sans-serif" font-size="30" font-weight="700" fill="#0f172a">A || B</text>
+<rect x="638.0" y="96" width="186.66666666666666" height="64" fill="#f8fafc" stroke="#cbd5e1" stroke-width="2"/>
+<text x="731.3333333333334" y="129" text-anchor="middle" dominant-baseline="central" font-family="DejaVu Sans, sans-serif" font-size="24" font-weight="400" fill="#64748b">A</text>
+<rect x="824.6666666666666" y="96" width="186.66666666666666" height="64" fill="#f8fafc" stroke="#cbd5e1" stroke-width="2"/>
+<text x="918.0" y="129" text-anchor="middle" dominant-baseline="central" font-family="DejaVu Sans, sans-serif" font-size="24" font-weight="400" fill="#64748b">B</text>
+<rect x="1011.3333333333333" y="96" width="186.66666666666666" height="64" fill="#f8fafc" stroke="#cbd5e1" stroke-width="2"/>
+<text x="1104.6666666666665" y="129" text-anchor="middle" dominant-baseline="central" font-family="DejaVu Sans, sans-serif" font-size="24" font-weight="400" fill="#64748b">result</text>
+<rect x="638.0" y="160" width="186.66666666666666" height="68" fill="#ffffff" stroke="#cbd5e1" stroke-width="2"/>
+<text x="731.3333333333334" y="194" text-anchor="middle" dominant-baseline="central" font-family="DejaVu Sans, sans-serif" font-size="24" font-weight="400" fill="#0f172a">true</text>
+<rect x="824.6666666666666" y="160" width="186.66666666666666" height="68" fill="#ffffff" stroke="#cbd5e1" stroke-width="2"/>
+<text x="918.0" y="194" text-anchor="middle" dominant-baseline="central" font-family="DejaVu Sans, sans-serif" font-size="24" font-weight="400" fill="#0f172a">true</text>
+<rect x="1011.3333333333333" y="160" width="186.66666666666666" height="68" fill="#f1f5f9" stroke="#cbd5e1" stroke-width="2"/>
+<text x="1104.6666666666665" y="194" text-anchor="middle" dominant-baseline="central" font-family="DejaVu Sans, sans-serif" font-size="24" font-weight="700" fill="#0f172a">true</text>
+<rect x="638.0" y="228" width="186.66666666666666" height="68" fill="#ffffff" stroke="#cbd5e1" stroke-width="2"/>
+<text x="731.3333333333334" y="262" text-anchor="middle" dominant-baseline="central" font-family="DejaVu Sans, sans-serif" font-size="24" font-weight="400" fill="#0f172a">true</text>
+<rect x="824.6666666666666" y="228" width="186.66666666666666" height="68" fill="#ffffff" stroke="#cbd5e1" stroke-width="2"/>
+<text x="918.0" y="262" text-anchor="middle" dominant-baseline="central" font-family="DejaVu Sans, sans-serif" font-size="24" font-weight="400" fill="#94a3b8">false</text>
+<rect x="1011.3333333333333" y="228" width="186.66666666666666" height="68" fill="#f1f5f9" stroke="#cbd5e1" stroke-width="2"/>
+<text x="1104.6666666666665" y="262" text-anchor="middle" dominant-baseline="central" font-family="DejaVu Sans, sans-serif" font-size="24" font-weight="700" fill="#0f172a">true</text>
+<rect x="638.0" y="296" width="186.66666666666666" height="68" fill="#ffffff" stroke="#cbd5e1" stroke-width="2"/>
+<text x="731.3333333333334" y="330" text-anchor="middle" dominant-baseline="central" font-family="DejaVu Sans, sans-serif" font-size="24" font-weight="400" fill="#94a3b8">false</text>
+<rect x="824.6666666666666" y="296" width="186.66666666666666" height="68" fill="#ffffff" stroke="#cbd5e1" stroke-width="2"/>
+<text x="918.0" y="330" text-anchor="middle" dominant-baseline="central" font-family="DejaVu Sans, sans-serif" font-size="24" font-weight="400" fill="#0f172a">true</text>
+<rect x="1011.3333333333333" y="296" width="186.66666666666666" height="68" fill="#f1f5f9" stroke="#cbd5e1" stroke-width="2"/>
+<text x="1104.6666666666665" y="330" text-anchor="middle" dominant-baseline="central" font-family="DejaVu Sans, sans-serif" font-size="24" font-weight="700" fill="#0f172a">true</text>
+<rect x="638.0" y="364" width="186.66666666666666" height="68" fill="#ffffff" stroke="#cbd5e1" stroke-width="2"/>
+<text x="731.3333333333334" y="398" text-anchor="middle" dominant-baseline="central" font-family="DejaVu Sans, sans-serif" font-size="24" font-weight="400" fill="#94a3b8">false</text>
+<rect x="824.6666666666666" y="364" width="186.66666666666666" height="68" fill="#ffffff" stroke="#cbd5e1" stroke-width="2"/>
+<text x="918.0" y="398" text-anchor="middle" dominant-baseline="central" font-family="DejaVu Sans, sans-serif" font-size="24" font-weight="400" fill="#94a3b8">false</text>
+<rect x="1011.3333333333333" y="364" width="186.66666666666666" height="68" fill="#f1f5f9" stroke="#cbd5e1" stroke-width="2"/>
+<text x="1104.6666666666665" y="398" text-anchor="middle" dominant-baseline="central" font-family="DejaVu Sans, sans-serif" font-size="24" font-weight="400" fill="#94a3b8">false</text>
+<text x="1453.0" y="37" text-anchor="middle" dominant-baseline="central" font-family="DejaVu Sans, sans-serif" font-size="20" font-weight="400" fill="#64748b">reverses the Boolean value</text>
+<text x="1453.0" y="63" text-anchor="middle" dominant-baseline="central" font-family="DejaVu Sans Mono, sans-serif" font-size="30" font-weight="700" fill="#0f172a">! A</text>
+<rect x="1258.0" y="96" width="195.0" height="64" fill="#f8fafc" stroke="#cbd5e1" stroke-width="2"/>
+<text x="1355.5" y="129" text-anchor="middle" dominant-baseline="central" font-family="DejaVu Sans, sans-serif" font-size="24" font-weight="400" fill="#64748b">A</text>
+<rect x="1453.0" y="96" width="195.0" height="64" fill="#f8fafc" stroke="#cbd5e1" stroke-width="2"/>
+<text x="1550.5" y="129" text-anchor="middle" dominant-baseline="central" font-family="DejaVu Sans, sans-serif" font-size="24" font-weight="400" fill="#64748b">result</text>
+<rect x="1258.0" y="160" width="195.0" height="68" fill="#ffffff" stroke="#cbd5e1" stroke-width="2"/>
+<text x="1355.5" y="194" text-anchor="middle" dominant-baseline="central" font-family="DejaVu Sans, sans-serif" font-size="24" font-weight="400" fill="#0f172a">true</text>
+<rect x="1453.0" y="160" width="195.0" height="68" fill="#f1f5f9" stroke="#cbd5e1" stroke-width="2"/>
+<text x="1550.5" y="194" text-anchor="middle" dominant-baseline="central" font-family="DejaVu Sans, sans-serif" font-size="24" font-weight="400" fill="#94a3b8">false</text>
+<rect x="1258.0" y="228" width="195.0" height="68" fill="#ffffff" stroke="#cbd5e1" stroke-width="2"/>
+<text x="1355.5" y="262" text-anchor="middle" dominant-baseline="central" font-family="DejaVu Sans, sans-serif" font-size="24" font-weight="400" fill="#94a3b8">false</text>
+<rect x="1453.0" y="228" width="195.0" height="68" fill="#f1f5f9" stroke="#cbd5e1" stroke-width="2"/>
+<text x="1550.5" y="262" text-anchor="middle" dominant-baseline="central" font-family="DejaVu Sans, sans-serif" font-size="24" font-weight="700" fill="#0f172a">true</text>
+</svg>
