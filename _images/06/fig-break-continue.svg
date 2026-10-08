@@ -1,0 +1,61 @@
+<svg xmlns="http://www.w3.org/2000/svg" xml:space="preserve" viewBox="0 0 830 450" width="830" height="450" role="img" aria-label="Куда передают управление break и continue в цикле for" font-family="Consolas, Menlo, 'DejaVu Sans Mono', 'Liberation Mono', monospace">
+<defs>
+<marker id="ai" viewBox="0 0 10 10" refX="8.5" refY="5" markerWidth="6.5" markerHeight="6.5" orient="auto"><path d="M 0 1 L 9 5 L 0 9 z" fill="#16202f"/></marker>
+<marker id="aw" viewBox="0 0 10 10" refX="8.5" refY="5" markerWidth="6.5" markerHeight="6.5" orient="auto"><path d="M 0 1 L 9 5 L 0 9 z" fill="#b4232b"/></marker>
+</defs>
+<rect x="0" y="0" width="830" height="450" fill="#ffffff"/>
+<text x="30" y="24" font-size="13" font-weight="700" fill="#3730a3">break: выход из всего цикла</text>
+<rect x="130" y="40" width="160" height="30" rx="8" fill="#f3f6fb" stroke="#ccd6e5" stroke-width="1.5"/>
+<text x="210.0" y="59.0" text-anchor="middle" font-size="12" font-weight="600" fill="#64748b">turn = 1</text>
+<path d="M 210 70 L 210 92" fill="none" stroke="#16202f" stroke-width="1.4" marker-end="url(#ai)"/>
+<path d="M 210 92 L 300 118 L 210 144 L 120 118 Z" fill="#eaf6f4" stroke="#0f766e" stroke-width="1.5"/>
+<text x="210" y="122" text-anchor="middle" font-size="11.5" font-weight="700" fill="#0f766e">turn &lt;= 10 ?</text>
+<text x="216" y="160" text-anchor="start" font-size="11" font-weight="600" fill="#64748b">да</text>
+<path d="M 210 144 L 210 168" fill="none" stroke="#16202f" stroke-width="1.4" marker-end="url(#ai)"/>
+<rect x="130" y="168" width="160" height="30" rx="8" fill="#ffffff" stroke="#ccd6e5" stroke-width="1.5"/>
+<text x="210.0" y="187.0" text-anchor="middle" font-size="12" font-weight="600" fill="#16202f">удар по врагу</text>
+<path d="M 210 198 L 210 222" fill="none" stroke="#16202f" stroke-width="1.4" marker-end="url(#ai)"/>
+<path d="M 210 222 L 300 248 L 210 274 L 120 248 Z" fill="#eaf6f4" stroke="#0f766e" stroke-width="1.5"/>
+<text x="210" y="252" text-anchor="middle" font-size="11.5" font-weight="700" fill="#0f766e">враг погиб?</text>
+<path d="M 300 248 L 322 248" fill="none" stroke="#16202f" stroke-width="1.4" marker-end="url(#ai)"/>
+<text x="302" y="240" text-anchor="start" font-size="11" font-weight="600" fill="#64748b">да</text>
+<rect x="322" y="234" width="74" height="30" rx="8" fill="#fdf1f1" stroke="#b4232b" stroke-width="1.5"/>
+<text x="359.0" y="253.0" text-anchor="middle" font-size="12" font-weight="600" fill="#b4232b">break</text>
+<path d="M 359 264 L 359 404 L 290 404" fill="none" stroke="#b4232b" stroke-width="2" marker-end="url(#aw)"/>
+<path d="M 210 274 L 210 312" fill="none" stroke="#16202f" stroke-width="1.4" marker-end="url(#ai)"/>
+<text x="216" y="296" text-anchor="start" font-size="11" font-weight="600" fill="#64748b">нет</text>
+<rect x="130" y="312" width="160" height="30" rx="8" fill="#ffffff" stroke="#ccd6e5" stroke-width="1.5"/>
+<text x="210.0" y="331.0" text-anchor="middle" font-size="12" font-weight="600" fill="#16202f">turn = turn + 1</text>
+<path d="M 130 327 L 98 327 L 98 132 L 148 132" fill="none" stroke="#16202f" stroke-width="1.4" marker-end="url(#ai)"/>
+<path d="M 120 118 L 70 118 L 70 412 L 130 412" fill="none" stroke="#16202f" stroke-width="1.4" marker-end="url(#ai)"/>
+<text x="74" y="110" text-anchor="start" font-size="11" font-weight="600" fill="#64748b">нет</text>
+<rect x="130" y="390" width="160" height="34" rx="8" fill="#eef0ff" stroke="#4338ca" stroke-width="1.5"/>
+<text x="210.0" y="411.0" text-anchor="middle" font-size="12" font-weight="600" fill="#3730a3">после цикла</text>
+<text x="430" y="24" font-size="13" font-weight="700" fill="#3730a3">continue: к следующему проходу</text>
+<rect x="530" y="40" width="160" height="30" rx="8" fill="#f3f6fb" stroke="#ccd6e5" stroke-width="1.5"/>
+<text x="610.0" y="59.0" text-anchor="middle" font-size="12" font-weight="600" fill="#64748b">turn = 1</text>
+<path d="M 610 70 L 610 92" fill="none" stroke="#16202f" stroke-width="1.4" marker-end="url(#ai)"/>
+<path d="M 610 92 L 700 118 L 610 144 L 520 118 Z" fill="#eaf6f4" stroke="#0f766e" stroke-width="1.5"/>
+<text x="610" y="122" text-anchor="middle" font-size="11.5" font-weight="700" fill="#0f766e">turn &lt;= 6 ?</text>
+<text x="616" y="160" text-anchor="start" font-size="11" font-weight="600" fill="#64748b">да</text>
+<path d="M 610 144 L 610 168" fill="none" stroke="#16202f" stroke-width="1.4" marker-end="url(#ai)"/>
+<path d="M 610 168 L 700 194 L 610 220 L 520 194 Z" fill="#eaf6f4" stroke="#0f766e" stroke-width="1.5"/>
+<text x="610" y="198" text-anchor="middle" font-size="11.5" font-weight="700" fill="#0f766e">turn % 3 == 0 ?</text>
+<path d="M 700 194 L 722 194" fill="none" stroke="#16202f" stroke-width="1.4" marker-end="url(#ai)"/>
+<text x="702" y="186" text-anchor="start" font-size="11" font-weight="600" fill="#64748b">да</text>
+<rect x="722" y="180" width="86" height="30" rx="8" fill="#fdf1f1" stroke="#b4232b" stroke-width="1.5"/>
+<text x="765.0" y="199.0" text-anchor="middle" font-size="12" font-weight="600" fill="#b4232b">continue</text>
+<path d="M 765 210 L 765 327 L 690 327" fill="none" stroke="#b4232b" stroke-width="2" marker-end="url(#aw)"/>
+<path d="M 610 220 L 610 250" fill="none" stroke="#16202f" stroke-width="1.4" marker-end="url(#ai)"/>
+<text x="616" y="240" text-anchor="start" font-size="11" font-weight="600" fill="#64748b">нет</text>
+<rect x="530" y="250" width="160" height="30" rx="8" fill="#ffffff" stroke="#ccd6e5" stroke-width="1.5"/>
+<text x="610.0" y="269.0" text-anchor="middle" font-size="12" font-weight="600" fill="#16202f">вывод "hit"</text>
+<path d="M 610 280 L 610 312" fill="none" stroke="#16202f" stroke-width="1.4" marker-end="url(#ai)"/>
+<rect x="530" y="312" width="160" height="30" rx="8" fill="#ffffff" stroke="#ccd6e5" stroke-width="1.5"/>
+<text x="610.0" y="331.0" text-anchor="middle" font-size="12" font-weight="600" fill="#16202f">turn = turn + 1</text>
+<path d="M 530 327 L 498 327 L 498 132 L 548 132" fill="none" stroke="#16202f" stroke-width="1.4" marker-end="url(#ai)"/>
+<path d="M 520 118 L 470 118 L 470 412 L 530 412" fill="none" stroke="#16202f" stroke-width="1.4" marker-end="url(#ai)"/>
+<text x="474" y="110" text-anchor="start" font-size="11" font-weight="600" fill="#64748b">нет</text>
+<rect x="530" y="390" width="160" height="34" rx="8" fill="#eef0ff" stroke="#4338ca" stroke-width="1.5"/>
+<text x="610.0" y="411.0" text-anchor="middle" font-size="12" font-weight="600" fill="#3730a3">после цикла</text>
+</svg>
