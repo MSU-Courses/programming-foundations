@@ -1,0 +1,31 @@
+<svg xmlns="http://www.w3.org/2000/svg" xml:space="preserve" viewBox="0 0 830 450" width="830" height="450" role="img" aria-label="Передача управления при вызове: из строки с вызовом выполнение переходит в функцию CalculateDamage, проходит её тело, от RETURN возвращается в ту же строку со значением 20" font-family="Consolas, Menlo, 'DejaVu Sans Mono', 'Liberation Mono', monospace">
+<defs>
+<marker id="aa" viewBox="0 0 10 10" refX="8.5" refY="5" markerWidth="6.5" markerHeight="6.5" orient="auto-start-reverse"><path d="M 0 1 L 9 5 L 0 9 z" fill="#4338ca"/></marker>
+<marker id="ai" viewBox="0 0 10 10" refX="8.5" refY="5" markerWidth="6.5" markerHeight="6.5" orient="auto-start-reverse"><path d="M 0 1 L 9 5 L 0 9 z" fill="#16202f"/></marker>
+<marker id="ao" viewBox="0 0 10 10" refX="8.5" refY="5" markerWidth="6.5" markerHeight="6.5" orient="auto-start-reverse"><path d="M 0 1 L 9 5 L 0 9 z" fill="#0f766e"/></marker>
+</defs>
+<rect x="0" y="0" width="830" height="450" fill="#ffffff"/>
+<rect x="20" y="20" width="790" height="128" rx="12" fill="#f3f6fb" stroke="#ccd6e5" stroke-width="1.5"/>
+<text x="40" y="46" text-anchor="start" font-size="11.5" font-weight="700" fill="#64748b">Вызывающий код</text>
+<rect x="36" y="60" width="520" height="28" rx="6" fill="#eef0ff" stroke="#4338ca" stroke-width="1.5"/>
+<text x="46" y="79" text-anchor="start" font-size="12" font-weight="700" fill="#3730a3">SET goblinLoss = CalculateDamage(heroAttack, goblinDefense)</text>
+<text x="46" y="112" text-anchor="start" font-size="12" font-weight="500" fill="#16202f">SET goblinHealth = goblinHealth - goblinLoss</text>
+<text x="46" y="136" text-anchor="start" font-size="11.5" font-weight="700" fill="#0f766e">3. После возврата строка продолжается как SET goblinLoss = 20</text>
+<rect x="220" y="210" width="590" height="220" rx="12" fill="#f3f6fb" stroke="#ccd6e5" stroke-width="1.5"/>
+<text x="240" y="236" text-anchor="start" font-size="11.5" font-weight="700" fill="#64748b">Функция</text>
+<text x="246" y="266" text-anchor="start" font-size="12" font-weight="500" fill="#16202f">FUNCTION CalculateDamage(attack, defense)</text>
+<text x="246" y="292" text-anchor="start" font-size="12" font-weight="500" fill="#16202f">    SET damage = attack - defense</text>
+<text x="246" y="318" text-anchor="start" font-size="12" font-weight="500" fill="#16202f">    IF damage &lt; 0</text>
+<text x="246" y="344" text-anchor="start" font-size="12" font-weight="500" fill="#16202f">        SET damage = 0</text>
+<text x="246" y="370" text-anchor="start" font-size="12" font-weight="500" fill="#16202f">    END IF</text>
+<rect x="236" y="377" width="260" height="28" rx="6" fill="#eaf6f4" stroke="#0f766e" stroke-width="1.5"/>
+<text x="246" y="396" text-anchor="start" font-size="12" font-weight="700" fill="#0f766e">    RETURN damage</text>
+<text x="246" y="422" text-anchor="start" font-size="12" font-weight="500" fill="#16202f">END FUNCTION</text>
+<path d="M 60 90 L 60 260 L 230 260" stroke="#4338ca" stroke-width="2" fill="none" marker-end="url(#aa)"/>
+<text x="72" y="180" text-anchor="start" font-size="11.5" font-weight="700" fill="#4338ca">1. Вызов:</text>
+<text x="72" y="198" text-anchor="start" font-size="11.5" font-weight="500" fill="#4338ca">attack = 30</text>
+<text x="72" y="214" text-anchor="start" font-size="11.5" font-weight="500" fill="#4338ca">defense = 10</text>
+<path d="M 498 391 L 780 391 L 780 74 L 562 74" stroke="#0f766e" stroke-width="2" fill="none" marker-end="url(#ao)"/>
+<text x="770" y="180" text-anchor="end" font-size="11.5" font-weight="700" fill="#0f766e">2. Возврат</text>
+<text x="770" y="198" text-anchor="end" font-size="11.5" font-weight="500" fill="#0f766e">значения 20</text>
+</svg>

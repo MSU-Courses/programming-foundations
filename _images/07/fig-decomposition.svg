@@ -1,0 +1,36 @@
+<svg xmlns="http://www.w3.org/2000/svg" xml:space="preserve" viewBox="0 0 830 400" width="830" height="400" role="img" aria-label="Дерево декомпозиции арены: Арена разбита на Прочитать урон, Провести три волны и Вывести итог; Провести три волны разбита на Посчитать удары, Прибавить к итогу и Сообщить о волне; подзадачи ReadDamage, CountHits и ShowWaveCleared станут функциями" font-family="Consolas, Menlo, 'DejaVu Sans Mono', 'Liberation Mono', monospace">
+<defs>
+<marker id="aa" viewBox="0 0 10 10" refX="8.5" refY="5" markerWidth="6.5" markerHeight="6.5" orient="auto-start-reverse"><path d="M 0 1 L 9 5 L 0 9 z" fill="#4338ca"/></marker>
+<marker id="ai" viewBox="0 0 10 10" refX="8.5" refY="5" markerWidth="6.5" markerHeight="6.5" orient="auto-start-reverse"><path d="M 0 1 L 9 5 L 0 9 z" fill="#16202f"/></marker>
+<marker id="ao" viewBox="0 0 10 10" refX="8.5" refY="5" markerWidth="6.5" markerHeight="6.5" orient="auto-start-reverse"><path d="M 0 1 L 9 5 L 0 9 z" fill="#0f766e"/></marker>
+</defs>
+<rect x="0" y="0" width="830" height="400" fill="#ffffff"/>
+<rect x="305.0" y="20" width="220" height="58" rx="8" fill="#f3f6fb" stroke="#ccd6e5" stroke-width="1.5"/>
+<text x="415" y="54" text-anchor="middle" font-size="13" font-weight="700" fill="#16202f">Арена</text>
+<path d="M 415 78 L 415 98 L 150 98 L 150 116" stroke="#16202f" stroke-width="1.6" fill="none" marker-end="url(#ai)"/>
+<path d="M 415 78 L 415 98 L 415 98 L 415 116" stroke="#16202f" stroke-width="1.6" fill="none" marker-end="url(#ai)"/>
+<path d="M 415 78 L 415 98 L 680 98 L 680 116" stroke="#16202f" stroke-width="1.6" fill="none" marker-end="url(#ai)"/>
+<rect x="40.0" y="120" width="220" height="58" rx="8" fill="#eef0ff" stroke="#4338ca" stroke-width="1.5"/>
+<text x="150" y="144" text-anchor="middle" font-size="13" font-weight="700" fill="#3730a3">Прочитать урон</text>
+<text x="150" y="165" text-anchor="middle" font-size="12" font-weight="500" fill="#4338ca">ReadDamage</text>
+<rect x="305.0" y="120" width="220" height="58" rx="8" fill="#f3f6fb" stroke="#ccd6e5" stroke-width="1.5"/>
+<text x="415" y="154" text-anchor="middle" font-size="13" font-weight="700" fill="#16202f">Провести три волны</text>
+<rect x="570.0" y="120" width="220" height="58" rx="8" fill="#f3f6fb" stroke="#ccd6e5" stroke-width="1.5"/>
+<text x="680" y="154" text-anchor="middle" font-size="13" font-weight="700" fill="#16202f">Вывести итог</text>
+<path d="M 415 178 L 415 200 L 150 200 L 150 218" stroke="#16202f" stroke-width="1.6" fill="none" marker-end="url(#ai)"/>
+<path d="M 415 178 L 415 200 L 415 200 L 415 218" stroke="#16202f" stroke-width="1.6" fill="none" marker-end="url(#ai)"/>
+<path d="M 415 178 L 415 200 L 680 200 L 680 218" stroke="#16202f" stroke-width="1.6" fill="none" marker-end="url(#ai)"/>
+<rect x="40.0" y="222" width="220" height="58" rx="8" fill="#eef0ff" stroke="#4338ca" stroke-width="1.5"/>
+<text x="150" y="246" text-anchor="middle" font-size="13" font-weight="700" fill="#3730a3">Посчитать удары</text>
+<text x="150" y="267" text-anchor="middle" font-size="12" font-weight="500" fill="#4338ca">CountHits</text>
+<rect x="305.0" y="222" width="220" height="58" rx="8" fill="#f3f6fb" stroke="#ccd6e5" stroke-width="1.5"/>
+<text x="415" y="256" text-anchor="middle" font-size="13" font-weight="700" fill="#16202f">Прибавить к итогу</text>
+<rect x="570.0" y="222" width="220" height="58" rx="8" fill="#eef0ff" stroke="#4338ca" stroke-width="1.5"/>
+<text x="680" y="246" text-anchor="middle" font-size="13" font-weight="700" fill="#3730a3">Сообщить о волне</text>
+<text x="680" y="267" text-anchor="middle" font-size="12" font-weight="500" fill="#4338ca">ShowWaveCleared</text>
+<text x="415" y="306" text-anchor="middle" font-size="11.5" font-weight="500" fill="#64748b">для каждой из трёх волн</text>
+<rect x="150" y="335" width="26" height="18" rx="4" fill="#eef0ff" stroke="#4338ca" stroke-width="1.5"/>
+<text x="186" y="349" text-anchor="start" font-size="12" font-weight="500" fill="#16202f">станет функцией</text>
+<rect x="430" y="335" width="26" height="18" rx="4" fill="#f3f6fb" stroke="#ccd6e5" stroke-width="1.5"/>
+<text x="466" y="349" text-anchor="start" font-size="12" font-weight="500" fill="#16202f">останется строкой в основной части</text>
+</svg>

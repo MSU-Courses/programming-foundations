@@ -1,0 +1,36 @@
+<svg xmlns="http://www.w3.org/2000/svg" xml:space="preserve" viewBox="0 0 830 380" width="830" height="380" role="img" aria-label="Части определения функции в C++: тип возвращаемого значения int, имя calculateDamage, параметры с типами в круглых скобках, тело в фигурных скобках и инструкция return" font-family="Consolas, Menlo, 'DejaVu Sans Mono', 'Liberation Mono', monospace">
+<defs>
+<marker id="aa" viewBox="0 0 10 10" refX="8.5" refY="5" markerWidth="6.5" markerHeight="6.5" orient="auto-start-reverse"><path d="M 0 1 L 9 5 L 0 9 z" fill="#4338ca"/></marker>
+<marker id="ai" viewBox="0 0 10 10" refX="8.5" refY="5" markerWidth="6.5" markerHeight="6.5" orient="auto-start-reverse"><path d="M 0 1 L 9 5 L 0 9 z" fill="#16202f"/></marker>
+<marker id="ao" viewBox="0 0 10 10" refX="8.5" refY="5" markerWidth="6.5" markerHeight="6.5" orient="auto-start-reverse"><path d="M 0 1 L 9 5 L 0 9 z" fill="#0f766e"/></marker>
+</defs>
+<rect x="0" y="0" width="830" height="380" fill="#ffffff"/>
+<rect x="54.0" y="130" width="426.0" height="30" rx="6" fill="#ffffff" stroke="#ccd6e5" stroke-width="1.5"/>
+<text x="60.0" y="150" text-anchor="start" font-size="15" font-weight="700" fill="#4338ca">int</text>
+<text x="96.0" y="150" text-anchor="start" font-size="15" font-weight="700" fill="#3730a3">calculateDamage</text>
+<text x="231.0" y="150" text-anchor="start" font-size="15" font-weight="700" fill="#0f766e">(int attack, int defense)</text>
+<text x="465.0" y="150" text-anchor="start" font-size="15" font-weight="700" fill="#16202f">{</text>
+<text x="60" y="180" text-anchor="start" font-size="15" font-weight="500" fill="#16202f">    int damage = attack - defense;</text>
+<text x="60" y="210" text-anchor="start" font-size="15" font-weight="500" fill="#16202f">    if (damage &lt; 1) {</text>
+<text x="60" y="240" text-anchor="start" font-size="15" font-weight="500" fill="#16202f">        damage = 1;</text>
+<text x="60" y="270" text-anchor="start" font-size="15" font-weight="500" fill="#16202f">    }</text>
+<rect x="92.0" y="280" width="134.0" height="28" rx="6" fill="#eef0ff" stroke="#4338ca" stroke-width="1.5"/>
+<text x="96.0" y="300" text-anchor="start" font-size="15" font-weight="700" fill="#3730a3">return damage;</text>
+<text x="60" y="330" text-anchor="start" font-size="15" font-weight="500" fill="#16202f">}</text>
+<path d="M 60.0 52 L 60.0 44 L 474.0 44 L 474.0 52" stroke="#64748b" stroke-width="1.4" fill="none"/>
+<text x="267.0" y="34" text-anchor="middle" font-size="12" font-weight="700" fill="#64748b">заголовок функции</text>
+<path d="M 60.0 124 L 60.0 128 L 87.0 128 L 87.0 124" stroke="#4338ca" stroke-width="1.4" fill="none"/>
+<path d="M 73.5 86 L 73.5 126" stroke="#4338ca" stroke-width="1.2" fill="none" stroke-dasharray="3 3"/>
+<text x="73.5" y="80" text-anchor="middle" font-size="12" font-weight="700" fill="#4338ca">тип результата</text>
+<path d="M 96.0 124 L 96.0 128 L 231.0 128 L 231.0 124" stroke="#3730a3" stroke-width="1.4" fill="none"/>
+<path d="M 163.5 106 L 163.5 126" stroke="#3730a3" stroke-width="1.2" fill="none" stroke-dasharray="3 3"/>
+<text x="163.5" y="100" text-anchor="middle" font-size="12" font-weight="700" fill="#3730a3">имя функции</text>
+<path d="M 231.0 124 L 231.0 128 L 456.0 128 L 456.0 124" stroke="#0f766e" stroke-width="1.4" fill="none"/>
+<path d="M 343.5 86 L 343.5 126" stroke="#0f766e" stroke-width="1.2" fill="none" stroke-dasharray="3 3"/>
+<text x="343.5" y="80" text-anchor="middle" font-size="12" font-weight="700" fill="#0f766e">параметры с типами</text>
+<path d="M 522 160 L 530 160 L 530 336 L 522 336" stroke="#64748b" stroke-width="1.4" fill="none"/>
+<text x="544" y="246" text-anchor="start" font-size="12" font-weight="700" fill="#64748b">тело функции:</text>
+<text x="544" y="264" text-anchor="start" font-size="12" font-weight="500" fill="#64748b">всё между { и }</text>
+<path d="M 231.0 295 L 330.0 295" stroke="#4338ca" stroke-width="1.2" fill="none" stroke-dasharray="3 3"/>
+<text x="339.0" y="300" text-anchor="start" font-size="12" font-weight="700" fill="#4338ca">возвращает значение</text>
+</svg>

@@ -1,0 +1,24 @@
+<svg xmlns="http://www.w3.org/2000/svg" xml:space="preserve" viewBox="0 0 830 250" width="830" height="250" role="img" aria-label="Функция как чёрный ящик: аргументы attack = 30 и defense = 10 входят в ящик CalculateDamage, выходит возвращаемое значение 20" font-family="Consolas, Menlo, 'DejaVu Sans Mono', 'Liberation Mono', monospace">
+<defs>
+<marker id="aa" viewBox="0 0 10 10" refX="8.5" refY="5" markerWidth="6.5" markerHeight="6.5" orient="auto-start-reverse"><path d="M 0 1 L 9 5 L 0 9 z" fill="#4338ca"/></marker>
+<marker id="ai" viewBox="0 0 10 10" refX="8.5" refY="5" markerWidth="6.5" markerHeight="6.5" orient="auto-start-reverse"><path d="M 0 1 L 9 5 L 0 9 z" fill="#16202f"/></marker>
+<marker id="ao" viewBox="0 0 10 10" refX="8.5" refY="5" markerWidth="6.5" markerHeight="6.5" orient="auto-start-reverse"><path d="M 0 1 L 9 5 L 0 9 z" fill="#0f766e"/></marker>
+</defs>
+<rect x="0" y="0" width="830" height="250" fill="#ffffff"/>
+<text x="40" y="40" text-anchor="start" font-size="12" font-weight="700" fill="#64748b">Аргументы</text>
+<rect x="30" y="62" width="180" height="40" rx="8" fill="#f3f6fb" stroke="#ccd6e5" stroke-width="1.5"/>
+<text x="120" y="87" text-anchor="middle" font-size="13" font-weight="700" fill="#16202f">attack = 30</text>
+<rect x="30" y="132" width="180" height="40" rx="8" fill="#f3f6fb" stroke="#ccd6e5" stroke-width="1.5"/>
+<text x="120" y="157" text-anchor="middle" font-size="13" font-weight="700" fill="#16202f">defense = 10</text>
+<path d="M 212 82 L 300 112" stroke="#4338ca" stroke-width="2" fill="none" marker-end="url(#aa)"/>
+<path d="M 212 152 L 300 128" stroke="#4338ca" stroke-width="2" fill="none" marker-end="url(#aa)"/>
+<rect x="305" y="50" width="250" height="140" rx="12" fill="#16202f" stroke="#16202f" stroke-width="1.5"/>
+<text x="430" y="112" text-anchor="middle" font-size="15" font-weight="700" fill="#ffffff">CalculateDamage</text>
+<text x="430" y="140" text-anchor="middle" font-size="12" font-weight="500" fill="#cbd5e1">что внутри,</text>
+<text x="430" y="158" text-anchor="middle" font-size="12" font-weight="500" fill="#cbd5e1">знать не обязательно</text>
+<path d="M 557 120 L 640 120" stroke="#0f766e" stroke-width="2" fill="none" marker-end="url(#ao)"/>
+<rect x="645" y="98" width="120" height="44" rx="8" fill="#eaf6f4" stroke="#0f766e" stroke-width="1.5"/>
+<text x="705" y="126" text-anchor="middle" font-size="15" font-weight="700" fill="#0f766e">20</text>
+<text x="705" y="40" text-anchor="middle" font-size="12" font-weight="700" fill="#64748b">Возвращаемое значение</text>
+<text x="415" y="228" text-anchor="middle" font-size="13" font-weight="500" fill="#16202f">Вызов: CalculateDamage(30, 10)</text>
+</svg>
