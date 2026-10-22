@@ -1,0 +1,52 @@
+<svg xmlns="http://www.w3.org/2000/svg" xml:space="preserve" viewBox="0 0 830 400" width="830" height="400" role="img" aria-label="Стек вызовов в четыре момента: только main; main и countHits; main, countHits и calculateDamage на вершине; после возврата calculateDamage снята, наверху снова countHits" font-family="Consolas, Menlo, 'DejaVu Sans Mono', 'Liberation Mono', monospace">
+<defs>
+<marker id="aw" viewBox="0 0 10 10" refX="8.5" refY="5" markerWidth="6.5" markerHeight="6.5" orient="auto-start-reverse"><path d="M 0 1 L 9 5 L 0 9 z" fill="#b4232b"/></marker>
+<marker id="ao" viewBox="0 0 10 10" refX="8.5" refY="5" markerWidth="6.5" markerHeight="6.5" orient="auto-start-reverse"><path d="M 0 1 L 9 5 L 0 9 z" fill="#0f766e"/></marker>
+</defs>
+<rect x="0" y="0" width="830" height="400" fill="#ffffff"/>
+<text x="115.0" y="34" text-anchor="middle" font-size="11.5" font-weight="700" fill="#64748b">1. Работает main</text>
+<path d="M 20 356 L 210 356" stroke="#16202f" stroke-width="2" fill="none"/>
+<rect x="20" y="272" width="190" height="70" rx="8" fill="#eef0ff" stroke="#4338ca" stroke-width="1.5"/>
+<text x="30" y="293" text-anchor="start" font-size="12" font-weight="700" fill="#3730a3">main</text>
+<text x="30" y="313" text-anchor="start" font-size="10.5" font-weight="500" fill="#3730a3">ENEMY_HEALTH = 100</text>
+<text x="30" y="328" text-anchor="start" font-size="10.5" font-weight="500" fill="#3730a3">heroAttack = 30</text>
+<text x="315.0" y="34" text-anchor="middle" font-size="11.5" font-weight="700" fill="#64748b">2. Вызвана countHits</text>
+<path d="M 220 356 L 410 356" stroke="#16202f" stroke-width="2" fill="none"/>
+<rect x="220" y="272" width="190" height="70" rx="8" fill="#ffffff" stroke="#ccd6e5" stroke-width="1.5"/>
+<text x="230" y="293" text-anchor="start" font-size="12" font-weight="700" fill="#16202f">main</text>
+<text x="230" y="313" text-anchor="start" font-size="10.5" font-weight="500" fill="#64748b">ENEMY_HEALTH = 100</text>
+<text x="230" y="328" text-anchor="start" font-size="10.5" font-weight="500" fill="#64748b">heroAttack = 30</text>
+<rect x="220" y="194" width="190" height="70" rx="8" fill="#eef0ff" stroke="#4338ca" stroke-width="1.5"/>
+<text x="230" y="215" text-anchor="start" font-size="12" font-weight="700" fill="#3730a3">countHits</text>
+<text x="230" y="235" text-anchor="start" font-size="10.5" font-weight="500" fill="#3730a3">enemyHealth = 100</text>
+<text x="230" y="250" text-anchor="start" font-size="10.5" font-weight="500" fill="#3730a3">hits = 0</text>
+<text x="515.0" y="34" text-anchor="middle" font-size="11.5" font-weight="700" fill="#64748b">3. Вызвана</text>
+<text x="515.0" y="50" text-anchor="middle" font-size="11.5" font-weight="700" fill="#64748b">calculateDamage</text>
+<path d="M 420 356 L 610 356" stroke="#16202f" stroke-width="2" fill="none"/>
+<rect x="420" y="272" width="190" height="70" rx="8" fill="#ffffff" stroke="#ccd6e5" stroke-width="1.5"/>
+<text x="430" y="293" text-anchor="start" font-size="12" font-weight="700" fill="#16202f">main</text>
+<text x="430" y="313" text-anchor="start" font-size="10.5" font-weight="500" fill="#64748b">ENEMY_HEALTH = 100</text>
+<text x="430" y="328" text-anchor="start" font-size="10.5" font-weight="500" fill="#64748b">heroAttack = 30</text>
+<rect x="420" y="194" width="190" height="70" rx="8" fill="#ffffff" stroke="#ccd6e5" stroke-width="1.5"/>
+<text x="430" y="215" text-anchor="start" font-size="12" font-weight="700" fill="#16202f">countHits</text>
+<text x="430" y="235" text-anchor="start" font-size="10.5" font-weight="500" fill="#64748b">enemyHealth = 100</text>
+<text x="430" y="250" text-anchor="start" font-size="10.5" font-weight="500" fill="#64748b">hits = 0</text>
+<rect x="420" y="116" width="190" height="70" rx="8" fill="#eef0ff" stroke="#4338ca" stroke-width="1.5"/>
+<text x="430" y="137" text-anchor="start" font-size="12" font-weight="700" fill="#3730a3">calculateDamage</text>
+<text x="430" y="157" text-anchor="start" font-size="10.5" font-weight="500" fill="#3730a3">attack = 30</text>
+<text x="430" y="172" text-anchor="start" font-size="10.5" font-weight="500" fill="#3730a3">damage = 20</text>
+<text x="715.0" y="34" text-anchor="middle" font-size="11.5" font-weight="700" fill="#64748b">4. Возврат 20</text>
+<path d="M 620 356 L 810 356" stroke="#16202f" stroke-width="2" fill="none"/>
+<rect x="620" y="272" width="190" height="70" rx="8" fill="#ffffff" stroke="#ccd6e5" stroke-width="1.5"/>
+<text x="630" y="293" text-anchor="start" font-size="12" font-weight="700" fill="#16202f">main</text>
+<text x="630" y="313" text-anchor="start" font-size="10.5" font-weight="500" fill="#64748b">ENEMY_HEALTH = 100</text>
+<text x="630" y="328" text-anchor="start" font-size="10.5" font-weight="500" fill="#64748b">heroAttack = 30</text>
+<rect x="620" y="194" width="190" height="70" rx="8" fill="#eef0ff" stroke="#4338ca" stroke-width="1.5"/>
+<text x="630" y="215" text-anchor="start" font-size="12" font-weight="700" fill="#3730a3">countHits</text>
+<text x="630" y="235" text-anchor="start" font-size="10.5" font-weight="500" fill="#3730a3">enemyHealth = 80</text>
+<text x="630" y="250" text-anchor="start" font-size="10.5" font-weight="500" fill="#3730a3">hits = 0</text>
+<rect x="620" y="116" width="190" height="70" rx="8" fill="#ffffff" stroke="#ccd6e5" stroke-width="1.5" stroke-dasharray="5 4"/>
+<text x="715.0" y="146" text-anchor="middle" font-size="10.5" font-weight="500" fill="#64748b">кадр calculateDamage</text>
+<text x="715.0" y="162" text-anchor="middle" font-size="10.5" font-weight="500" fill="#64748b">снят</text>
+<text x="415" y="384" text-anchor="middle" font-size="12" font-weight="500" fill="#16202f">Наверху всегда кадр функции, которая выполняется сейчас</text>
+</svg>
