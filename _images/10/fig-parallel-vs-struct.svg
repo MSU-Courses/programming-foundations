@@ -1,0 +1,51 @@
+<svg xmlns="http://www.w3.org/2000/svg" xml:space="preserve" viewBox="0 0 900 330" width="900" height="330" role="img" aria-label="Слева параллельные массивы prices и counts: после сортировки одного prices количества остались на старых местах и относятся к чужим предметам. Справа массив структур Item, отсортированный по цене: Arrow 2 x40, Potion 25 x3, Shield 80 x1, Sword 120 x1, поля каждого предмета остались вместе" font-family="Consolas, Menlo, 'DejaVu Sans Mono', 'Liberation Mono', monospace">
+<defs>
+<marker id="aa" viewBox="0 0 10 10" refX="8.5" refY="5" markerWidth="6.5" markerHeight="6.5" orient="auto-start-reverse"><path d="M 0 1 L 9 5 L 0 9 z" fill="#4338ca"/></marker>
+<marker id="ai" viewBox="0 0 10 10" refX="8.5" refY="5" markerWidth="6.5" markerHeight="6.5" orient="auto-start-reverse"><path d="M 0 1 L 9 5 L 0 9 z" fill="#16202f"/></marker>
+<marker id="ao" viewBox="0 0 10 10" refX="8.5" refY="5" markerWidth="6.5" markerHeight="6.5" orient="auto-start-reverse"><path d="M 0 1 L 9 5 L 0 9 z" fill="#0f766e"/></marker>
+</defs>
+<rect x="0" y="0" width="900" height="330" fill="#ffffff"/>
+<rect x="20" y="14" width="420" height="300" rx="12" fill="#f3f6fb" stroke="#ccd6e5" stroke-width="1.5"/><text x="230.0" y="40" text-anchor="middle" font-size="11.5" font-weight="700" fill="#64748b">Параллельные массивы: отсортировали только prices</text>
+<text x="40" y="70" text-anchor="start" font-size="12" font-weight="700" fill="#16202f">prices</text>
+<text x="40" y="120" text-anchor="start" font-size="12" font-weight="700" fill="#16202f">counts</text>
+<rect x="120" y="50" width="70" height="32" rx="0" fill="#e6f4f1" stroke="#0f766e" stroke-width="1.5"/>
+<text x="155" y="71" text-anchor="middle" font-size="13" font-weight="700" fill="#0f766e">2</text>
+<rect x="120" y="100" width="70" height="32" rx="0" fill="#fdecec" stroke="#b91c1c" stroke-width="1.5"/>
+<text x="155" y="121" text-anchor="middle" font-size="13" font-weight="700" fill="#b91c1c">1</text>
+<rect x="190" y="50" width="70" height="32" rx="0" fill="#e6f4f1" stroke="#0f766e" stroke-width="1.5"/>
+<text x="225" y="71" text-anchor="middle" font-size="13" font-weight="700" fill="#0f766e">25</text>
+<rect x="190" y="100" width="70" height="32" rx="0" fill="#fdecec" stroke="#b91c1c" stroke-width="1.5"/>
+<text x="225" y="121" text-anchor="middle" font-size="13" font-weight="700" fill="#b91c1c">3</text>
+<rect x="260" y="50" width="70" height="32" rx="0" fill="#e6f4f1" stroke="#0f766e" stroke-width="1.5"/>
+<text x="295" y="71" text-anchor="middle" font-size="13" font-weight="700" fill="#0f766e">80</text>
+<rect x="260" y="100" width="70" height="32" rx="0" fill="#fdecec" stroke="#b91c1c" stroke-width="1.5"/>
+<text x="295" y="121" text-anchor="middle" font-size="13" font-weight="700" fill="#b91c1c">40</text>
+<rect x="330" y="50" width="70" height="32" rx="0" fill="#e6f4f1" stroke="#0f766e" stroke-width="1.5"/>
+<text x="365" y="71" text-anchor="middle" font-size="13" font-weight="700" fill="#0f766e">120</text>
+<rect x="330" y="100" width="70" height="32" rx="0" fill="#fdecec" stroke="#b91c1c" stroke-width="1.5"/>
+<text x="365" y="121" text-anchor="middle" font-size="13" font-weight="700" fill="#b91c1c">1</text>
+<text x="230" y="175" text-anchor="middle" font-size="11.5" font-weight="700" fill="#b91c1c">стрела теперь стоит 2 монеты,</text>
+<text x="230" y="193" text-anchor="middle" font-size="11.5" font-weight="700" fill="#b91c1c">но её количество 1, а не 40:</text>
+<text x="230" y="211" text-anchor="middle" font-size="11.5" font-weight="700" fill="#b91c1c">связь по индексу потеряна</text>
+<rect x="460" y="14" width="420" height="300" rx="12" fill="#f3f6fb" stroke="#ccd6e5" stroke-width="1.5"/><text x="670.0" y="40" text-anchor="middle" font-size="11.5" font-weight="700" fill="#64748b">Массив структур Item: обмен целыми предметами</text>
+<rect x="480" y="50" width="380" height="50" rx="6" fill="#ffffff" stroke="#0f766e" stroke-width="1.5"/>
+<text x="500" y="70" text-anchor="start" font-size="11" font-weight="700" fill="#64748b">[0]</text>
+<text x="540" y="81" text-anchor="start" font-size="12" font-weight="700" fill="#16202f">name "Arrow"</text>
+<text x="700" y="81" text-anchor="start" font-size="12" font-weight="700" fill="#0f766e">price 2</text>
+<text x="790" y="81" text-anchor="start" font-size="12" font-weight="700" fill="#16202f">count 40</text>
+<rect x="480" y="112" width="380" height="50" rx="6" fill="#ffffff" stroke="#0f766e" stroke-width="1.5"/>
+<text x="500" y="132" text-anchor="start" font-size="11" font-weight="700" fill="#64748b">[1]</text>
+<text x="540" y="143" text-anchor="start" font-size="12" font-weight="700" fill="#16202f">name "Potion"</text>
+<text x="700" y="143" text-anchor="start" font-size="12" font-weight="700" fill="#0f766e">price 25</text>
+<text x="790" y="143" text-anchor="start" font-size="12" font-weight="700" fill="#16202f">count 3</text>
+<rect x="480" y="174" width="380" height="50" rx="6" fill="#ffffff" stroke="#0f766e" stroke-width="1.5"/>
+<text x="500" y="194" text-anchor="start" font-size="11" font-weight="700" fill="#64748b">[2]</text>
+<text x="540" y="205" text-anchor="start" font-size="12" font-weight="700" fill="#16202f">name "Shield"</text>
+<text x="700" y="205" text-anchor="start" font-size="12" font-weight="700" fill="#0f766e">price 80</text>
+<text x="790" y="205" text-anchor="start" font-size="12" font-weight="700" fill="#16202f">count 1</text>
+<rect x="480" y="236" width="380" height="50" rx="6" fill="#ffffff" stroke="#0f766e" stroke-width="1.5"/>
+<text x="500" y="256" text-anchor="start" font-size="11" font-weight="700" fill="#64748b">[3]</text>
+<text x="540" y="267" text-anchor="start" font-size="12" font-weight="700" fill="#16202f">name "Sword"</text>
+<text x="700" y="267" text-anchor="start" font-size="12" font-weight="700" fill="#0f766e">price 120</text>
+<text x="790" y="267" text-anchor="start" font-size="12" font-weight="700" fill="#16202f">count 1</text>
+</svg>

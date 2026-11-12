@@ -1,0 +1,107 @@
+<svg xmlns="http://www.w3.org/2000/svg" xml:space="preserve" viewBox="0 0 900 550" width="900" height="550" role="img" aria-label="Данные программы с врагами: матрица char map[4][6] хранит стены, пол, монеты и выход; массив структур Enemy enemies[2] хранит гоблина G со здоровьем 30 в клетке {1, 3} и орка O со здоровьем 50 в клетке {2, 1}, после удара 30; структура Position player хранит клетку {1, 1}. Функция printMap собирает их в один вывод, где игрок и враги нарисованы поверх карты" font-family="Consolas, Menlo, 'DejaVu Sans Mono', 'Liberation Mono', monospace">
+<defs>
+<marker id="ar" viewBox="0 0 10 10" refX="8.5" refY="5" markerWidth="6.5" markerHeight="6.5" orient="auto-start-reverse"><path d="M 0 1 L 9 5 L 0 9 z" fill="#b91c1c"/></marker>
+<marker id="ai" viewBox="0 0 10 10" refX="8.5" refY="5" markerWidth="6.5" markerHeight="6.5" orient="auto-start-reverse"><path d="M 0 1 L 9 5 L 0 9 z" fill="#16202f"/></marker>
+<marker id="aa" viewBox="0 0 10 10" refX="8.5" refY="5" markerWidth="6.5" markerHeight="6.5" orient="auto-start-reverse"><path d="M 0 1 L 9 5 L 0 9 z" fill="#4338ca"/></marker>
+</defs>
+<rect x="0" y="0" width="900" height="550" fill="#ffffff"/>
+<rect x="20" y="14" width="270" height="250" rx="12" fill="#f3f6fb" stroke="#ccd6e5" stroke-width="1.5"/>
+<text x="155" y="40" text-anchor="middle" font-size="13" font-weight="700" fill="#16202f">char map[4][6]</text>
+<text x="155" y="58" text-anchor="middle" font-size="11" font-weight="500" fill="#64748b">только то, что не двигается</text>
+<text x="71.0" y="82" text-anchor="middle" font-size="12" font-weight="700" fill="#64748b">0</text>
+<text x="105.0" y="82" text-anchor="middle" font-size="12" font-weight="700" fill="#64748b">1</text>
+<text x="139.0" y="82" text-anchor="middle" font-size="12" font-weight="700" fill="#64748b">2</text>
+<text x="173.0" y="82" text-anchor="middle" font-size="12" font-weight="700" fill="#64748b">3</text>
+<text x="207.0" y="82" text-anchor="middle" font-size="12" font-weight="700" fill="#64748b">4</text>
+<text x="241.0" y="82" text-anchor="middle" font-size="12" font-weight="700" fill="#64748b">5</text>
+<text x="40" y="111.0" text-anchor="middle" font-size="12" font-weight="700" fill="#64748b">0</text>
+<text x="40" y="145.0" text-anchor="middle" font-size="12" font-weight="700" fill="#64748b">1</text>
+<text x="40" y="179.0" text-anchor="middle" font-size="12" font-weight="700" fill="#64748b">2</text>
+<text x="40" y="213.0" text-anchor="middle" font-size="12" font-weight="700" fill="#64748b">3</text>
+<rect x="54" y="90" width="34" height="34" fill="#d6dde8" stroke="#ccd6e5" stroke-width="1.2"/><text x="71.0" y="110.4" text-anchor="middle" font-size="10" font-weight="700" fill="#16202f">#</text>
+<rect x="88" y="90" width="34" height="34" fill="#d6dde8" stroke="#ccd6e5" stroke-width="1.2"/><text x="105.0" y="110.4" text-anchor="middle" font-size="10" font-weight="700" fill="#16202f">#</text>
+<rect x="122" y="90" width="34" height="34" fill="#d6dde8" stroke="#ccd6e5" stroke-width="1.2"/><text x="139.0" y="110.4" text-anchor="middle" font-size="10" font-weight="700" fill="#16202f">#</text>
+<rect x="156" y="90" width="34" height="34" fill="#d6dde8" stroke="#ccd6e5" stroke-width="1.2"/><text x="173.0" y="110.4" text-anchor="middle" font-size="10" font-weight="700" fill="#16202f">#</text>
+<rect x="190" y="90" width="34" height="34" fill="#d6dde8" stroke="#ccd6e5" stroke-width="1.2"/><text x="207.0" y="110.4" text-anchor="middle" font-size="10" font-weight="700" fill="#16202f">#</text>
+<rect x="224" y="90" width="34" height="34" fill="#d6dde8" stroke="#ccd6e5" stroke-width="1.2"/><text x="241.0" y="110.4" text-anchor="middle" font-size="10" font-weight="700" fill="#16202f">#</text>
+<rect x="54" y="124" width="34" height="34" fill="#d6dde8" stroke="#ccd6e5" stroke-width="1.2"/><text x="71.0" y="144.4" text-anchor="middle" font-size="10" font-weight="700" fill="#16202f">#</text>
+<rect x="88" y="124" width="34" height="34" fill="#ffffff" stroke="#ccd6e5" stroke-width="1.2"/><text x="105.0" y="144.4" text-anchor="middle" font-size="10" font-weight="700" fill="#16202f">.</text>
+<rect x="122" y="124" width="34" height="34" fill="#fff4d6" stroke="#ccd6e5" stroke-width="1.2"/><text x="139.0" y="144.4" text-anchor="middle" font-size="10" font-weight="700" fill="#16202f">C</text>
+<rect x="156" y="124" width="34" height="34" fill="#ffffff" stroke="#ccd6e5" stroke-width="1.2"/><text x="173.0" y="144.4" text-anchor="middle" font-size="10" font-weight="700" fill="#16202f">.</text>
+<rect x="190" y="124" width="34" height="34" fill="#ffffff" stroke="#ccd6e5" stroke-width="1.2"/><text x="207.0" y="144.4" text-anchor="middle" font-size="10" font-weight="700" fill="#16202f">.</text>
+<rect x="224" y="124" width="34" height="34" fill="#d6dde8" stroke="#ccd6e5" stroke-width="1.2"/><text x="241.0" y="144.4" text-anchor="middle" font-size="10" font-weight="700" fill="#16202f">#</text>
+<rect x="54" y="158" width="34" height="34" fill="#d6dde8" stroke="#ccd6e5" stroke-width="1.2"/><text x="71.0" y="178.4" text-anchor="middle" font-size="10" font-weight="700" fill="#16202f">#</text>
+<rect x="88" y="158" width="34" height="34" fill="#ffffff" stroke="#ccd6e5" stroke-width="1.2"/><text x="105.0" y="178.4" text-anchor="middle" font-size="10" font-weight="700" fill="#16202f">.</text>
+<rect x="122" y="158" width="34" height="34" fill="#d6dde8" stroke="#ccd6e5" stroke-width="1.2"/><text x="139.0" y="178.4" text-anchor="middle" font-size="10" font-weight="700" fill="#16202f">#</text>
+<rect x="156" y="158" width="34" height="34" fill="#fff4d6" stroke="#ccd6e5" stroke-width="1.2"/><text x="173.0" y="178.4" text-anchor="middle" font-size="10" font-weight="700" fill="#16202f">C</text>
+<rect x="224" y="158" width="34" height="34" fill="#d6dde8" stroke="#ccd6e5" stroke-width="1.2"/><text x="241.0" y="178.4" text-anchor="middle" font-size="10" font-weight="700" fill="#16202f">#</text>
+<rect x="54" y="192" width="34" height="34" fill="#d6dde8" stroke="#ccd6e5" stroke-width="1.2"/><text x="71.0" y="212.4" text-anchor="middle" font-size="10" font-weight="700" fill="#16202f">#</text>
+<rect x="88" y="192" width="34" height="34" fill="#d6dde8" stroke="#ccd6e5" stroke-width="1.2"/><text x="105.0" y="212.4" text-anchor="middle" font-size="10" font-weight="700" fill="#16202f">#</text>
+<rect x="122" y="192" width="34" height="34" fill="#d6dde8" stroke="#ccd6e5" stroke-width="1.2"/><text x="139.0" y="212.4" text-anchor="middle" font-size="10" font-weight="700" fill="#16202f">#</text>
+<rect x="156" y="192" width="34" height="34" fill="#d6dde8" stroke="#ccd6e5" stroke-width="1.2"/><text x="173.0" y="212.4" text-anchor="middle" font-size="10" font-weight="700" fill="#16202f">#</text>
+<rect x="190" y="192" width="34" height="34" fill="#d6dde8" stroke="#ccd6e5" stroke-width="1.2"/><text x="207.0" y="212.4" text-anchor="middle" font-size="10" font-weight="700" fill="#16202f">#</text>
+<rect x="224" y="192" width="34" height="34" fill="#d6dde8" stroke="#ccd6e5" stroke-width="1.2"/><text x="241.0" y="212.4" text-anchor="middle" font-size="10" font-weight="700" fill="#16202f">#</text>
+<rect x="190" y="158" width="34" height="34" fill="#e6f4f1" stroke="#ccd6e5" stroke-width="1.2"/><text x="207.0" y="178.4" text-anchor="middle" font-size="10" font-weight="700" fill="#0f766e">E</text>
+<rect x="310" y="14" width="370" height="250" rx="12" fill="#f3f6fb" stroke="#ccd6e5" stroke-width="1.5"/>
+<text x="495" y="40" text-anchor="middle" font-size="13" font-weight="700" fill="#16202f">Enemy enemies[2]</text>
+<text x="495" y="58" text-anchor="middle" font-size="11" font-weight="500" fill="#64748b">массив структур: у врага три поля</text>
+<text x="407" y="82" text-anchor="middle" font-size="12" font-weight="700" fill="#64748b">[0]</text>
+<rect x="330" y="90" width="155" height="118" rx="8" fill="#fdecec" stroke="#b91c1c" stroke-width="1.5"/>
+<text x="342" y="118" text-anchor="start" font-size="12.5" font-weight="500" fill="#64748b">symbol</text>
+<text x="473" y="118" text-anchor="end" font-size="13.5" font-weight="700" fill="#b91c1c">'G'</text>
+<line x1="338" y1="130" x2="477" y2="130" stroke="#f3c4c4" stroke-width="1"/>
+<text x="342" y="152" text-anchor="start" font-size="12.5" font-weight="500" fill="#64748b">health</text>
+<text x="473" y="152" text-anchor="end" font-size="13.5" font-weight="700" fill="#b91c1c">30</text>
+<line x1="338" y1="164" x2="477" y2="164" stroke="#f3c4c4" stroke-width="1"/>
+<text x="342" y="186" text-anchor="start" font-size="12.5" font-weight="500" fill="#64748b">pos</text>
+<text x="473" y="186" text-anchor="end" font-size="13.5" font-weight="700" fill="#b91c1c">{1, 3}</text>
+<text x="582" y="82" text-anchor="middle" font-size="12" font-weight="700" fill="#64748b">[1]</text>
+<rect x="505" y="90" width="155" height="118" rx="8" fill="#fdecec" stroke="#b91c1c" stroke-width="1.5"/>
+<text x="517" y="118" text-anchor="start" font-size="12.5" font-weight="500" fill="#64748b">symbol</text>
+<text x="648" y="118" text-anchor="end" font-size="13.5" font-weight="700" fill="#b91c1c">'O'</text>
+<line x1="513" y1="130" x2="652" y2="130" stroke="#f3c4c4" stroke-width="1"/>
+<text x="517" y="152" text-anchor="start" font-size="12.5" font-weight="500" fill="#64748b">health</text>
+<text x="648" y="152" text-anchor="end" font-size="13.5" font-weight="700" fill="#b91c1c">50</text>
+<line x1="513" y1="164" x2="652" y2="164" stroke="#f3c4c4" stroke-width="1"/>
+<text x="517" y="186" text-anchor="start" font-size="12.5" font-weight="500" fill="#64748b">pos</text>
+<text x="648" y="186" text-anchor="end" font-size="13.5" font-weight="700" fill="#b91c1c">{2, 1}</text>
+<text x="582" y="230" text-anchor="middle" font-size="12" font-weight="700" fill="#b91c1c">health после удара: 30</text>
+<rect x="700" y="14" width="180" height="250" rx="12" fill="#f3f6fb" stroke="#ccd6e5" stroke-width="1.5"/>
+<text x="790" y="40" text-anchor="middle" font-size="13" font-weight="700" fill="#16202f">Position player</text>
+<text x="790" y="58" text-anchor="middle" font-size="11" font-weight="500" fill="#64748b">одна структура</text>
+<rect x="720" y="90" width="140" height="84" rx="8" fill="#eef0ff" stroke="#4338ca" stroke-width="1.5"/>
+<text x="732" y="118" text-anchor="start" font-size="12.5" font-weight="500" fill="#64748b">row</text>
+<text x="848" y="118" text-anchor="end" font-size="13.5" font-weight="700" fill="#3730a3">1</text>
+<text x="732" y="152" text-anchor="start" font-size="12.5" font-weight="500" fill="#64748b">col</text>
+<text x="848" y="152" text-anchor="end" font-size="13.5" font-weight="700" fill="#3730a3">1</text>
+<line x1="728" y1="130" x2="852" y2="130" stroke="#c7cbf5" stroke-width="1"/>
+<line x1="155" y1="268" x2="302.5" y2="322" stroke="#16202f" stroke-width="1.6" marker-end="url(#ai)"/>
+<line x1="495" y1="268" x2="450" y2="322" stroke="#16202f" stroke-width="1.6" marker-end="url(#ai)"/>
+<line x1="790" y1="268" x2="620.0" y2="322" stroke="#16202f" stroke-width="1.6" marker-end="url(#ai)"/>
+<rect x="250" y="330" width="400" height="200" rx="12" fill="#f3f6fb" stroke="#ccd6e5" stroke-width="1.5"/>
+<text x="450" y="354" text-anchor="middle" font-size="12" font-weight="700" fill="#4338ca">printMap: игрок и враги поверх клеток карты</text>
+<rect x="348" y="374" width="34" height="34" fill="#d6dde8" stroke="#ccd6e5" stroke-width="1.2"/><text x="365.0" y="394.4" text-anchor="middle" font-size="10" font-weight="700" fill="#16202f">#</text>
+<rect x="382" y="374" width="34" height="34" fill="#d6dde8" stroke="#ccd6e5" stroke-width="1.2"/><text x="399.0" y="394.4" text-anchor="middle" font-size="10" font-weight="700" fill="#16202f">#</text>
+<rect x="416" y="374" width="34" height="34" fill="#d6dde8" stroke="#ccd6e5" stroke-width="1.2"/><text x="433.0" y="394.4" text-anchor="middle" font-size="10" font-weight="700" fill="#16202f">#</text>
+<rect x="450" y="374" width="34" height="34" fill="#d6dde8" stroke="#ccd6e5" stroke-width="1.2"/><text x="467.0" y="394.4" text-anchor="middle" font-size="10" font-weight="700" fill="#16202f">#</text>
+<rect x="484" y="374" width="34" height="34" fill="#d6dde8" stroke="#ccd6e5" stroke-width="1.2"/><text x="501.0" y="394.4" text-anchor="middle" font-size="10" font-weight="700" fill="#16202f">#</text>
+<rect x="518" y="374" width="34" height="34" fill="#d6dde8" stroke="#ccd6e5" stroke-width="1.2"/><text x="535.0" y="394.4" text-anchor="middle" font-size="10" font-weight="700" fill="#16202f">#</text>
+<rect x="348" y="408" width="34" height="34" fill="#d6dde8" stroke="#ccd6e5" stroke-width="1.2"/><text x="365.0" y="428.4" text-anchor="middle" font-size="10" font-weight="700" fill="#16202f">#</text>
+<rect x="416" y="408" width="34" height="34" fill="#fff4d6" stroke="#ccd6e5" stroke-width="1.2"/><text x="433.0" y="428.4" text-anchor="middle" font-size="10" font-weight="700" fill="#16202f">C</text>
+<rect x="484" y="408" width="34" height="34" fill="#ffffff" stroke="#ccd6e5" stroke-width="1.2"/><text x="501.0" y="428.4" text-anchor="middle" font-size="10" font-weight="700" fill="#16202f">.</text>
+<rect x="518" y="408" width="34" height="34" fill="#d6dde8" stroke="#ccd6e5" stroke-width="1.2"/><text x="535.0" y="428.4" text-anchor="middle" font-size="10" font-weight="700" fill="#16202f">#</text>
+<rect x="348" y="442" width="34" height="34" fill="#d6dde8" stroke="#ccd6e5" stroke-width="1.2"/><text x="365.0" y="462.4" text-anchor="middle" font-size="10" font-weight="700" fill="#16202f">#</text>
+<rect x="416" y="442" width="34" height="34" fill="#d6dde8" stroke="#ccd6e5" stroke-width="1.2"/><text x="433.0" y="462.4" text-anchor="middle" font-size="10" font-weight="700" fill="#16202f">#</text>
+<rect x="450" y="442" width="34" height="34" fill="#fff4d6" stroke="#ccd6e5" stroke-width="1.2"/><text x="467.0" y="462.4" text-anchor="middle" font-size="10" font-weight="700" fill="#16202f">C</text>
+<rect x="518" y="442" width="34" height="34" fill="#d6dde8" stroke="#ccd6e5" stroke-width="1.2"/><text x="535.0" y="462.4" text-anchor="middle" font-size="10" font-weight="700" fill="#16202f">#</text>
+<rect x="348" y="476" width="34" height="34" fill="#d6dde8" stroke="#ccd6e5" stroke-width="1.2"/><text x="365.0" y="496.4" text-anchor="middle" font-size="10" font-weight="700" fill="#16202f">#</text>
+<rect x="382" y="476" width="34" height="34" fill="#d6dde8" stroke="#ccd6e5" stroke-width="1.2"/><text x="399.0" y="496.4" text-anchor="middle" font-size="10" font-weight="700" fill="#16202f">#</text>
+<rect x="416" y="476" width="34" height="34" fill="#d6dde8" stroke="#ccd6e5" stroke-width="1.2"/><text x="433.0" y="496.4" text-anchor="middle" font-size="10" font-weight="700" fill="#16202f">#</text>
+<rect x="450" y="476" width="34" height="34" fill="#d6dde8" stroke="#ccd6e5" stroke-width="1.2"/><text x="467.0" y="496.4" text-anchor="middle" font-size="10" font-weight="700" fill="#16202f">#</text>
+<rect x="484" y="476" width="34" height="34" fill="#d6dde8" stroke="#ccd6e5" stroke-width="1.2"/><text x="501.0" y="496.4" text-anchor="middle" font-size="10" font-weight="700" fill="#16202f">#</text>
+<rect x="518" y="476" width="34" height="34" fill="#d6dde8" stroke="#ccd6e5" stroke-width="1.2"/><text x="535.0" y="496.4" text-anchor="middle" font-size="10" font-weight="700" fill="#16202f">#</text>
+<rect x="382" y="408" width="34" height="34" fill="#eef0ff" stroke="#4338ca" stroke-width="2.5"/><text x="399.0" y="428.4" text-anchor="middle" font-size="10" font-weight="700" fill="#3730a3">@</text>
+<rect x="450" y="408" width="34" height="34" fill="#fdecec" stroke="#b91c1c" stroke-width="2.5"/><text x="467.0" y="428.4" text-anchor="middle" font-size="10" font-weight="700" fill="#b91c1c">G</text>
+<rect x="382" y="442" width="34" height="34" fill="#fdecec" stroke="#b91c1c" stroke-width="2.5"/><text x="399.0" y="462.4" text-anchor="middle" font-size="10" font-weight="700" fill="#b91c1c">O</text>
+<rect x="484" y="442" width="34" height="34" fill="#e6f4f1" stroke="#ccd6e5" stroke-width="1.2"/><text x="501.0" y="462.4" text-anchor="middle" font-size="10" font-weight="700" fill="#0f766e">E</text>
+</svg>

@@ -1,0 +1,61 @@
+<svg xmlns="http://www.w3.org/2000/svg" xml:space="preserve" viewBox="0 0 800 370" width="800" height="370" role="img" aria-label="Карта уровня 4 на 6: игрок @ в клетке (1, 1), гоблин G в клетке (1, 3), орк O в клетке (2, 1). Стрелка от игрока вниз к орку: удар отнимает 20, здоровье орка 50 - 20 = 30. Справа обозначения клеток" font-family="Consolas, Menlo, 'DejaVu Sans Mono', 'Liberation Mono', monospace">
+<defs>
+<marker id="ar" viewBox="0 0 10 10" refX="8.5" refY="5" markerWidth="6.5" markerHeight="6.5" orient="auto-start-reverse"><path d="M 0 1 L 9 5 L 0 9 z" fill="#b91c1c"/></marker>
+<marker id="ai" viewBox="0 0 10 10" refX="8.5" refY="5" markerWidth="6.5" markerHeight="6.5" orient="auto-start-reverse"><path d="M 0 1 L 9 5 L 0 9 z" fill="#16202f"/></marker>
+<marker id="aa" viewBox="0 0 10 10" refX="8.5" refY="5" markerWidth="6.5" markerHeight="6.5" orient="auto-start-reverse"><path d="M 0 1 L 9 5 L 0 9 z" fill="#4338ca"/></marker>
+</defs>
+<rect x="0" y="0" width="800" height="370" fill="#ffffff"/>
+<rect x="20" y="14" width="760" height="340" rx="12" fill="#f3f6fb" stroke="#ccd6e5" stroke-width="1.5"/>
+<text x="248" y="40" text-anchor="middle" font-size="11.5" font-weight="700" fill="#64748b">Карта уровня: матрица 4 на 6</text>
+<text x="108.0" y="70" text-anchor="middle" font-size="12" font-weight="700" fill="#64748b">0</text>
+<text x="164.0" y="70" text-anchor="middle" font-size="12" font-weight="700" fill="#64748b">1</text>
+<text x="220.0" y="70" text-anchor="middle" font-size="12" font-weight="700" fill="#64748b">2</text>
+<text x="276.0" y="70" text-anchor="middle" font-size="12" font-weight="700" fill="#64748b">3</text>
+<text x="332.0" y="70" text-anchor="middle" font-size="12" font-weight="700" fill="#64748b">4</text>
+<text x="388.0" y="70" text-anchor="middle" font-size="12" font-weight="700" fill="#64748b">5</text>
+<text x="66" y="110.0" text-anchor="middle" font-size="12" font-weight="700" fill="#64748b">0</text>
+<text x="66" y="166.0" text-anchor="middle" font-size="12" font-weight="700" fill="#64748b">1</text>
+<text x="66" y="222.0" text-anchor="middle" font-size="12" font-weight="700" fill="#64748b">2</text>
+<text x="66" y="278.0" text-anchor="middle" font-size="12" font-weight="700" fill="#64748b">3</text>
+<rect x="80" y="78" width="56" height="56" fill="#d6dde8" stroke="#ccd6e5" stroke-width="1.2"/><text x="108.0" y="111.6" text-anchor="middle" font-size="16" font-weight="700" fill="#16202f">#</text>
+<rect x="136" y="78" width="56" height="56" fill="#d6dde8" stroke="#ccd6e5" stroke-width="1.2"/><text x="164.0" y="111.6" text-anchor="middle" font-size="16" font-weight="700" fill="#16202f">#</text>
+<rect x="192" y="78" width="56" height="56" fill="#d6dde8" stroke="#ccd6e5" stroke-width="1.2"/><text x="220.0" y="111.6" text-anchor="middle" font-size="16" font-weight="700" fill="#16202f">#</text>
+<rect x="248" y="78" width="56" height="56" fill="#d6dde8" stroke="#ccd6e5" stroke-width="1.2"/><text x="276.0" y="111.6" text-anchor="middle" font-size="16" font-weight="700" fill="#16202f">#</text>
+<rect x="304" y="78" width="56" height="56" fill="#d6dde8" stroke="#ccd6e5" stroke-width="1.2"/><text x="332.0" y="111.6" text-anchor="middle" font-size="16" font-weight="700" fill="#16202f">#</text>
+<rect x="360" y="78" width="56" height="56" fill="#d6dde8" stroke="#ccd6e5" stroke-width="1.2"/><text x="388.0" y="111.6" text-anchor="middle" font-size="16" font-weight="700" fill="#16202f">#</text>
+<rect x="80" y="134" width="56" height="56" fill="#d6dde8" stroke="#ccd6e5" stroke-width="1.2"/><text x="108.0" y="167.6" text-anchor="middle" font-size="16" font-weight="700" fill="#16202f">#</text>
+<rect x="192" y="134" width="56" height="56" fill="#fff4d6" stroke="#ccd6e5" stroke-width="1.2"/><text x="220.0" y="167.6" text-anchor="middle" font-size="16" font-weight="700" fill="#16202f">C</text>
+<rect x="304" y="134" width="56" height="56" fill="#ffffff" stroke="#ccd6e5" stroke-width="1.2"/><text x="332.0" y="167.6" text-anchor="middle" font-size="16" font-weight="700" fill="#16202f">.</text>
+<rect x="360" y="134" width="56" height="56" fill="#d6dde8" stroke="#ccd6e5" stroke-width="1.2"/><text x="388.0" y="167.6" text-anchor="middle" font-size="16" font-weight="700" fill="#16202f">#</text>
+<rect x="80" y="190" width="56" height="56" fill="#d6dde8" stroke="#ccd6e5" stroke-width="1.2"/><text x="108.0" y="223.6" text-anchor="middle" font-size="16" font-weight="700" fill="#16202f">#</text>
+<rect x="192" y="190" width="56" height="56" fill="#d6dde8" stroke="#ccd6e5" stroke-width="1.2"/><text x="220.0" y="223.6" text-anchor="middle" font-size="16" font-weight="700" fill="#16202f">#</text>
+<rect x="248" y="190" width="56" height="56" fill="#fff4d6" stroke="#ccd6e5" stroke-width="1.2"/><text x="276.0" y="223.6" text-anchor="middle" font-size="16" font-weight="700" fill="#16202f">C</text>
+<rect x="360" y="190" width="56" height="56" fill="#d6dde8" stroke="#ccd6e5" stroke-width="1.2"/><text x="388.0" y="223.6" text-anchor="middle" font-size="16" font-weight="700" fill="#16202f">#</text>
+<rect x="80" y="246" width="56" height="56" fill="#d6dde8" stroke="#ccd6e5" stroke-width="1.2"/><text x="108.0" y="279.6" text-anchor="middle" font-size="16" font-weight="700" fill="#16202f">#</text>
+<rect x="136" y="246" width="56" height="56" fill="#d6dde8" stroke="#ccd6e5" stroke-width="1.2"/><text x="164.0" y="279.6" text-anchor="middle" font-size="16" font-weight="700" fill="#16202f">#</text>
+<rect x="192" y="246" width="56" height="56" fill="#d6dde8" stroke="#ccd6e5" stroke-width="1.2"/><text x="220.0" y="279.6" text-anchor="middle" font-size="16" font-weight="700" fill="#16202f">#</text>
+<rect x="248" y="246" width="56" height="56" fill="#d6dde8" stroke="#ccd6e5" stroke-width="1.2"/><text x="276.0" y="279.6" text-anchor="middle" font-size="16" font-weight="700" fill="#16202f">#</text>
+<rect x="304" y="246" width="56" height="56" fill="#d6dde8" stroke="#ccd6e5" stroke-width="1.2"/><text x="332.0" y="279.6" text-anchor="middle" font-size="16" font-weight="700" fill="#16202f">#</text>
+<rect x="360" y="246" width="56" height="56" fill="#d6dde8" stroke="#ccd6e5" stroke-width="1.2"/><text x="388.0" y="279.6" text-anchor="middle" font-size="16" font-weight="700" fill="#16202f">#</text>
+<rect x="136" y="134" width="56" height="56" fill="#eef0ff" stroke="#4338ca" stroke-width="2.5"/><text x="164.0" y="167.6" text-anchor="middle" font-size="16" font-weight="700" fill="#3730a3">@</text>
+<rect x="248" y="134" width="56" height="56" fill="#fdecec" stroke="#b91c1c" stroke-width="2.5"/><text x="276.0" y="167.6" text-anchor="middle" font-size="16" font-weight="700" fill="#b91c1c">G</text>
+<rect x="136" y="190" width="56" height="56" fill="#fdecec" stroke="#b91c1c" stroke-width="2.5"/><text x="164.0" y="223.6" text-anchor="middle" font-size="16" font-weight="700" fill="#b91c1c">O</text>
+<rect x="304" y="190" width="56" height="56" fill="#e6f4f1" stroke="#ccd6e5" stroke-width="1.2"/><text x="332.0" y="223.6" text-anchor="middle" font-size="16" font-weight="700" fill="#0f766e">E</text>
+<path d="M 146 162.0 C 110 172.0, 110 208.0, 144 214.0" fill="none" stroke="#b91c1c" stroke-width="2.2" marker-end="url(#ar)"/>
+<text x="248" y="332" text-anchor="middle" font-size="12.5" font-weight="700" fill="#b91c1c">удар вниз: клетка (2, 1), здоровье орка 50 - 20 = 30</text>
+<text x="480" y="68" text-anchor="start" font-size="11.5" font-weight="700" fill="#64748b">Обозначения</text>
+<rect x="480" y="82" width="28" height="28" fill="#eef0ff" stroke="#4338ca" stroke-width="2.5"/><text x="494.0" y="98.8" text-anchor="middle" font-size="8" font-weight="700" fill="#3730a3">@</text>
+<text x="520" y="101" text-anchor="start" font-size="12.5" font-weight="500" fill="#16202f">игрок, клетка (1, 1)</text>
+<rect x="480" y="118" width="28" height="28" fill="#fdecec" stroke="#b91c1c" stroke-width="2.5"/><text x="494.0" y="134.8" text-anchor="middle" font-size="8" font-weight="700" fill="#b91c1c">G</text>
+<text x="520" y="137" text-anchor="start" font-size="12.5" font-weight="500" fill="#16202f">гоблин: здоровье 30, (1, 3)</text>
+<rect x="480" y="154" width="28" height="28" fill="#fdecec" stroke="#b91c1c" stroke-width="2.5"/><text x="494.0" y="170.8" text-anchor="middle" font-size="8" font-weight="700" fill="#b91c1c">O</text>
+<text x="520" y="173" text-anchor="start" font-size="12.5" font-weight="500" fill="#16202f">орк: здоровье 50, (2, 1)</text>
+<rect x="480" y="190" width="28" height="28" fill="#d6dde8" stroke="#ccd6e5" stroke-width="1.2"/><text x="494.0" y="206.8" text-anchor="middle" font-size="8" font-weight="700" fill="#16202f">#</text>
+<text x="520" y="209" text-anchor="start" font-size="12.5" font-weight="500" fill="#16202f">стена</text>
+<rect x="480" y="226" width="28" height="28" fill="#ffffff" stroke="#ccd6e5" stroke-width="1.2"/><text x="494.0" y="242.8" text-anchor="middle" font-size="8" font-weight="700" fill="#16202f">.</text>
+<text x="520" y="245" text-anchor="start" font-size="12.5" font-weight="500" fill="#16202f">свободная клетка</text>
+<rect x="480" y="262" width="28" height="28" fill="#fff4d6" stroke="#ccd6e5" stroke-width="1.2"/><text x="494.0" y="278.8" text-anchor="middle" font-size="8" font-weight="700" fill="#16202f">C</text>
+<text x="520" y="281" text-anchor="start" font-size="12.5" font-weight="500" fill="#16202f">монета</text>
+<rect x="480" y="298" width="28" height="28" fill="#e6f4f1" stroke="#ccd6e5" stroke-width="1.2"/><text x="494.0" y="314.8" text-anchor="middle" font-size="8" font-weight="700" fill="#0f766e">E</text>
+<text x="520" y="317" text-anchor="start" font-size="12.5" font-weight="500" fill="#16202f">выход</text>
+</svg>
