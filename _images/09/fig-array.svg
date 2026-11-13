@@ -1,0 +1,34 @@
+<svg xmlns="http://www.w3.org/2000/svg" xml:space="preserve" viewBox="0 0 680 240" width="680" height="240" role="img" aria-label="Массив scores из пяти элементов: значения 120, 95, 0, 210, 150 лежат подряд, индексы от 0 до 4; номер уровня на единицу больше индекса; scores[3] равно 210" font-family="Consolas, Menlo, 'DejaVu Sans Mono', 'Liberation Mono', monospace">
+<defs>
+<marker id="aa" viewBox="0 0 10 10" refX="8.5" refY="5" markerWidth="6.5" markerHeight="6.5" orient="auto-start-reverse"><path d="M 0 1 L 9 5 L 0 9 z" fill="#4338ca"/></marker>
+<marker id="ai" viewBox="0 0 10 10" refX="8.5" refY="5" markerWidth="6.5" markerHeight="6.5" orient="auto-start-reverse"><path d="M 0 1 L 9 5 L 0 9 z" fill="#16202f"/></marker>
+<marker id="ao" viewBox="0 0 10 10" refX="8.5" refY="5" markerWidth="6.5" markerHeight="6.5" orient="auto-start-reverse"><path d="M 0 1 L 9 5 L 0 9 z" fill="#0f766e"/></marker>
+</defs>
+<rect x="0" y="0" width="680" height="240" fill="#ffffff"/>
+<rect x="20" y="20" width="640" height="200" rx="12" fill="#f3f6fb" stroke="#ccd6e5" stroke-width="1.5"/>
+<text x="80" y="113" text-anchor="middle" font-size="14" font-weight="700" fill="#3730a3">scores</text>
+<text x="140" y="70" text-anchor="end" font-size="11" font-weight="500" fill="#64748b">значение</text>
+<text x="140" y="166" text-anchor="end" font-size="11" font-weight="500" fill="#64748b">индекс</text>
+<rect x="150" y="84" width="90" height="48" rx="0" fill="#ffffff" stroke="#16202f" stroke-width="1.5"/>
+<text x="195.0" y="114" text-anchor="middle" font-size="15" font-weight="700" fill="#16202f">120</text>
+<text x="195.0" y="166" text-anchor="middle" font-size="13" font-weight="700" fill="#64748b">0</text>
+<text x="195.0" y="70" text-anchor="middle" font-size="11" font-weight="500" fill="#64748b">уровень 1</text>
+<rect x="240" y="84" width="90" height="48" rx="0" fill="#ffffff" stroke="#16202f" stroke-width="1.5"/>
+<text x="285.0" y="114" text-anchor="middle" font-size="15" font-weight="700" fill="#16202f">95</text>
+<text x="285.0" y="166" text-anchor="middle" font-size="13" font-weight="700" fill="#64748b">1</text>
+<text x="285.0" y="70" text-anchor="middle" font-size="11" font-weight="500" fill="#64748b">уровень 2</text>
+<rect x="330" y="84" width="90" height="48" rx="0" fill="#ffffff" stroke="#16202f" stroke-width="1.5"/>
+<text x="375.0" y="114" text-anchor="middle" font-size="15" font-weight="700" fill="#16202f">0</text>
+<text x="375.0" y="166" text-anchor="middle" font-size="13" font-weight="700" fill="#64748b">2</text>
+<text x="375.0" y="70" text-anchor="middle" font-size="11" font-weight="500" fill="#64748b">уровень 3</text>
+<rect x="420" y="84" width="90" height="48" rx="0" fill="#eef0ff" stroke="#4338ca" stroke-width="1.5"/>
+<text x="465.0" y="114" text-anchor="middle" font-size="15" font-weight="700" fill="#3730a3">210</text>
+<text x="465.0" y="166" text-anchor="middle" font-size="13" font-weight="700" fill="#64748b">3</text>
+<text x="465.0" y="70" text-anchor="middle" font-size="11" font-weight="500" fill="#64748b">уровень 4</text>
+<rect x="510" y="84" width="90" height="48" rx="0" fill="#ffffff" stroke="#16202f" stroke-width="1.5"/>
+<text x="555.0" y="114" text-anchor="middle" font-size="15" font-weight="700" fill="#16202f">150</text>
+<text x="555.0" y="166" text-anchor="middle" font-size="13" font-weight="700" fill="#64748b">4</text>
+<text x="555.0" y="70" text-anchor="middle" font-size="11" font-weight="500" fill="#64748b">уровень 5</text>
+<text x="465.0" y="200" text-anchor="middle" font-size="12" font-weight="700" fill="#4338ca">scores[3] = 210</text>
+<path d="M 465.0 186 L 465.0 176" stroke="#4338ca" stroke-width="1.5" fill="none" marker-end="url(#aa)"/>
+</svg>
